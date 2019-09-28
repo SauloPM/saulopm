@@ -1,0 +1,57 @@
+// Colores
+$text        : black;
+$primary     : rgb(255,000,035);
+$darkprimary : rgb(165,000,025);
+$white       : rgba(255,255,255,.5);
+
+// Responsive
+$mobile :  480px;
+$tablet :  768px;
+$desktop: 1400px;
+
+#header {
+    padding: 100px 0;
+
+    h1 {
+        color: $text;
+        font-size: 10px;
+        font-weight: normal;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        white-space: nowrap;
+        margin: 15px 0 0;
+    }
+
+    h2 {
+        color: $text;
+        font-size: 65px;
+        font-weight: lighter;
+        font-family: 'Selima', sans-serif;
+        text-align: center;
+        text-transform: lowercase;
+        margin: 0 auto;
+        transform: rotate(-12deg)
+    }
+}
+
+// Mobile First
+
+@media only screen and (min-width: $tablet) {
+    #header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        h1 {
+            font-size: 15px;
+            letter-spacing: 10px;
+            margin: 50px 0 0;
+        }
+
+        h2 {
+            font-size: 175px;
+        }
+    }
+}

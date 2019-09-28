@@ -1,1 +1,225 @@
-/* You can add global styles to this file, and also import other style files */
+// Colores
+$text        : rgb(000,000,000);
+$primary     : rgb(255,000,035);
+$darkprimary : rgb(165,000,025);
+$white       : rgb(255,255,255);
+
+// Responsive
+$mobile :  480px;
+$tablet :  768px;
+$desktop: 1400px;
+
+// Fonts
+
+@font-face {
+    font-family: "Selima";
+    src: url(./assets/fonts/selima.ttf);
+}
+
+// Scrollbar
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+// Text Selection
+
+::-moz-selection { color: $white; background: $primary }
+::selection      { color: $white; background: $primary }
+
+// ––––––––––––––– //
+//     GENERAL     //
+// ––––––––––––––– //
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $text;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+// –––––––––––––– //
+//     FOOTER     //
+// –––––––––––––– //
+
+.redes-sociales {
+    position: fixed;
+    bottom: 25px;
+    left: 25px;
+    z-index: 75;
+
+    .red-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: $text;
+        font-size: 25px;
+        border-radius: 50%;
+        box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+        margin-top: 15px;
+        position: relative;
+        width: 60px;
+        height: 60px;
+        transition: .25s ease-in-out;
+
+        &::before {
+            content: "";
+            display: block;
+            background: white;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            transform: scale(1);
+            transition: .3s ease-in-out;
+        }
+
+        &::after {
+            content: "";
+            display: block;
+            background: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: -1;
+            transform: scale(0);
+            transition: .3s ease-in-out;
+        }
+
+        &:hover {
+            color: white;
+
+            &::before {
+                background: transparent;
+                border-color: transparent;
+                transform: scale(1.25);
+            }
+
+            &::after {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+    background: $primary;
+    background: linear-gradient($primary, $darkprimary);
+    border-radius: 2px;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.5);
+    margin: 0;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 75;
+    width: 110px;
+    height: 50px;
+    transition: 0.5s ease-in-out;
+
+    .fa {
+        position: absolute;
+        top: 50%;
+        right: 28px;
+        transform: translateY(-50%);
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    &:hover {
+        padding-right: 15px;
+
+        .fa {
+            right: 25px;
+            opacity: 1;
+        }
+    }
+
+    &:active {
+        color: transparent;
+
+        .fa {
+            color: transparent;
+        }
+    }
+}
+
+// ───────────────── //
+//     PRELOADER     //
+// ───────────────── //
+
+#preloader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $primary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.spinner {
+    position: relative;
+    transform: scale(5);
+
+    &::before, &::after {
+        content: "";
+        position: relative;
+        display: block;
+    }
+
+    &::before {
+        animation: spinner 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+        width: 1em;
+        height: 1em;
+        background-color: #fff;
+    }
+
+    &::after {
+        animation: shadow 2.5s cubic-bezier(0.75, 0, 0.5, 1) infinite normal;
+        bottom: -.5em;
+        height: .25em;
+        border-radius: 50%;
+        background-color: rgba(#000,0.2);
+    }
+}
+  
+@keyframes spinner {
+    50% {
+        border-radius: 50%;
+        transform: scale(0.5) rotate(360deg);
+    }
+    100% {
+        transform: scale(1) rotate(720deg);
+    }
+}
+
+@keyframes shadow {
+    50% {
+        transform: scale(0.5);
+        background-color: rgba(#000,0.1);
+    }
+}
