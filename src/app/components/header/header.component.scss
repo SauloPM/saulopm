@@ -38,7 +38,15 @@ $desktop: 1400px;
 
 // Mobile First
 
+@media only screen and (min-width: $mobile) {
+
+    #header h2 {
+        font-size: 100px;
+    }
+}
+
 @media only screen and (min-width: $tablet) {
+
     #header {
         display: flex;
         flex-direction: column;
@@ -51,7 +59,14 @@ $desktop: 1400px;
         }
 
         h2 {
-            font-size: 175px;
+            font-size: 150px;
         }
+    }
+}
+
+@media only screen and (min-width: $desktop) {
+
+    #header h2 {
+        font-size: 175px;
     }
 }
