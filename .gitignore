@@ -44,3 +44,12 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Fuentes
+/src/assets/fonts
+
+# Currículo
+/src/assets/cv.pdf
+
+# Directorio de imágenes
+/src/assets/img
