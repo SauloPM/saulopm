@@ -7,6 +7,7 @@ $white       : rgba(255,255,255,.5);
 // Responsive
 $mobile :  480px;
 $tablet :  768px;
+$laptop : 1200px;
 $desktop: 1400px;
 
 // ––––––––––––––––– //
@@ -30,18 +31,16 @@ $desktop: 1400px;
             position: relative;
             width: 100%;
             overflow: hidden;
-
-            a {
-                width: 75%;
-            }
         }
     }
 
-    a {
+    .proyecto {
         text-decoration: none;
         box-shadow: 25px 25px 75px black;
         position: relative;
         bottom: 0;
+        width: 100%;
+        max-width: 350px;
         transition: .5s ease-in-out;
 
         .tools {
@@ -61,8 +60,6 @@ $desktop: 1400px;
 
         img {
             display: block;
-            position: relative;
-            z-index: 50;
             width: 100%;
             height: auto;
         }
@@ -79,34 +76,72 @@ $desktop: 1400px;
 }
 
 // Mobile First
+
 @media only screen and (min-width: $mobile) {
-    #proyectos .fila .tools {
-        font-size: 12px;
+
+    #proyectos .proyecto {
+        max-width: 75%;
+
+        .tools {
+            font-size: 12px;
+        }
     }
 }
 
-@media only screen and (min-width: $tablet) and (max-width: 1399px) {
+@media only screen and (min-width: $tablet) {
+
     #proyectos .fila {
         flex-wrap: nowrap;
 
-        .size-4  { padding: 085px 0; a { width: 75% } }
-        .size-6  { padding: 175px 0; a { width: 65% } }
-        .size-12 { padding: 100px 0; a { width: 35% } }
+        .size-4  {
+            padding: 50px 0;
+            
+            .proyecto {
+                max-width: 75%;
+            }
+        }
+
+        .size-6  {
+            padding: 75px 0;
+            
+            .proyecto {
+                max-width: 65%;
+            }
+        }
+
+        .size-12 {
+            padding: 100px 0;
+
+            .proyecto {
+                max-width: 50%;
+            }
+        }
         
         .tools {
-            font-size: 12px;
             white-space: normal;
         }
     }
 }
 
 @media only screen and (min-width: $desktop) {
-    #proyectos .fila {
-        flex-wrap: nowrap;
 
-        .size-4  { padding: 100px 0; a { width: 75% } }
-        .size-6  { padding: 150px 0; a { width: 65% } }
-        .size-12 { padding: 125px 0; a { width: 35% } }
+    #proyectos .fila {
+
+        .size-4  {
+            padding: 100px 0;
+        }
+
+        .size-6  {
+            padding: 150px 0;
+        }
+
+        .size-12 {
+            padding: 125px 0;
+            
+            .proyecto {
+                max-width: 40%;
+            }
+        }
 
         .tools {
             font-size: 15px;
@@ -115,20 +150,6 @@ $desktop: 1400px;
 }
 
 // Fondos
-
-.bg-bubbleglasses     { background: rgb(055,255,125) }
-.bg-nidodepiopio      { background: rgb(000,220,225) }
-.bg-patriciacv        { background: rgb(075,190,225) }
-.bg-obedguerra        { background: rgb(255,000,055) }
-.bg-guiaangular       { background: rgb(050,055,070) }
-.bg-excerpta1         { background: rgb(050,125,185) }
-.bg-excerpta2         { background: rgb(255,205,050) }
-.bg-sententiapp       { background: rgb(225,165,075) }
-.bg-estudiojuridicosg { background: rgb(100,100,100) }
-.bg-soledadparalegal  { background: rgb(175,050,255) }
-.bg-jcabogada         { background: rgb(255,130,125) }
-.bg-terapiaencasa     { background: rgb(175,180,085) }
-.bg-aprosan           { background: rgb(000,180,255) }
 
 .columna::before {
     content: "";
@@ -142,6 +163,20 @@ $desktop: 1400px;
     bottom: 0;
     opacity: .1;
 }
+
+.bg-aprosan           { background: rgb(000,180,255) }
+.bg-bubbleglasses     { background: rgb(055,255,125) }
+.bg-estudiojuridicosg { background: rgb(100,100,100) }
+.bg-excerpta1         { background: rgb(050,125,185) }
+.bg-excerpta2         { background: rgb(255,205,050) }
+.bg-guiaangular       { background: rgb(050,055,070) }
+.bg-jcabogada         { background: rgb(255,130,125) }
+.bg-nidodepiopio      { background: rgb(000,220,225) }
+.bg-obedguerra        { background: rgb(255,000,055) }
+.bg-patriciacv        { background: rgb(075,190,225) }
+.bg-sententiapp       { background: rgb(225,165,075) }
+.bg-soledadparalegal  { background: rgb(175,050,255) }
+.bg-terapiaencasa     { background: rgb(175,180,085) }
 
 .bg-excerpta1.columna::before         { background-image: url('./../../../assets/img/proyectos/fondos/excerpta1.jpg')         }
 .bg-sententiapp.columna::before       { background-image: url('./../../../assets/img/proyectos/fondos/sententiapp.jpg')       }
