@@ -54,7 +54,7 @@ $desktop: 1200px;
             justify-content: center;
             flex-direction: column;
             color: black;
-            background: white;
+            background: rgba(255,255,255,.95);
             padding: 25px;
             position: absolute;
             top: 0;
@@ -64,7 +64,6 @@ $desktop: 1200px;
             width: 100%;
             overflow: hidden;
             opacity: 0;
-            transition: .25s ease-in;
 
             .titulo {
                 font-size: 8px;
@@ -75,17 +74,15 @@ $desktop: 1200px;
                 line-height: 15px;
                 padding: 0 15px 10px;
                 margin-bottom: 15px;
+                opacity: 0;
             }
 
             .herramientas {
                 font-size: 10px;
                 text-align: center;
                 line-height: 15px;
+                opacity: 0;
             }
-        }
-
-        &:hover .caption {
-            opacity: 1;
         }
     }
 }
