@@ -1,14 +1,16 @@
 // Colores
+
 $text        : black;
 $primary     : rgb(255,000,035);
 $darkprimary : rgb(165,000,025);
 $white       : rgba(255,255,255,.5);
 
-// Responsive
-$mobile :  480px;
+// Responsive Breakpoints
+
+$mobile :  576px;
 $tablet :  768px;
-$laptop : 1200px;
-$desktop: 1400px;
+$laptop :  992px;
+$desktop: 1200px;
 
 // ––––––––––––––––– //
 //     PROYECTOS     //
@@ -16,61 +18,33 @@ $desktop: 1400px;
 
 #proyectos {
 
-    .fila {
+    // Grid de Bootstrap
+
+    .col-sm-12 {
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-        .columna {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            padding: 75px 0;
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-        }
+        justify-content: center;
+        padding: 75px 0;
+        overflow: hidden;
     }
 
+    // Proyecto
+
     .proyecto {
+        display: block;
         text-decoration: none;
         box-shadow: 25px 25px 75px black;
-        position: relative;
-        bottom: 0;
+        margin: 0 auto;
         width: 100%;
-        max-width: 350px;
         transition: .5s ease-in-out;
 
-        .tools {
-            display: block;
-            color: white;
-            font-size: 10px;
-            font-weight: 300;
-            text-align: center;
-            white-space: nowrap;
-            position: absolute;
-            bottom: -15px;
-            z-index: 25;
-            width: 100%;
-            opacity: 0;
-            transition: .5s bottom ease-out, 1s opacity ease-out;
-        }
+        &.app { max-width: 200px; }
+        &.web { max-width: 350px; }
 
         img {
             display: block;
             width: 100%;
             height: auto;
-        }
-
-        &:hover {
-            bottom: 10px;
-
-            & .tools {
-                bottom: -30px;
-                opacity: 1;
-            }
         }
     }
 }
@@ -80,71 +54,69 @@ $desktop: 1400px;
 @media only screen and (min-width: $mobile) {
 
     #proyectos .proyecto {
-        max-width: 75%;
 
-        .tools {
-            font-size: 12px;
+        &.web {
+            max-width: 75%;
+        }
+
+        &.app {
+            max-width: 35%;
         }
     }
 }
 
 @media only screen and (min-width: $tablet) {
 
-    #proyectos .fila {
-        flex-wrap: nowrap;
+    #proyectos {
 
-        .size-4  {
+        .col-md-4  {
             padding: 50px 0;
             
-            .proyecto {
+            .proyecto.web {
                 max-width: 75%;
             }
         }
 
-        .size-6  {
+        .col-md-6  {
             padding: 75px 0;
             
-            .proyecto {
+            .proyecto.web {
                 max-width: 65%;
             }
-        }
 
-        .size-12 {
-            padding: 100px 0;
-
-            .proyecto {
-                max-width: 50%;
+            .proyecto.app {
+                max-width: 45%;
             }
         }
-        
-        .tools {
-            white-space: normal;
+
+        .col-md-12 {
+            padding: 100px 0;
+
+            .proyecto.web {
+                max-width: 50%;
+            }
         }
     }
 }
 
-@media only screen and (min-width: $desktop) {
+@media only screen and (min-width: $laptop) {
 
-    #proyectos .fila {
+    #proyectos {
 
-        .size-4  {
+        .col-md-4  {
             padding: 100px 0;
         }
 
-        .size-6  {
+        .col-md-6  {
             padding: 150px 0;
-        }
-
-        .size-12 {
-            padding: 125px 0;
             
-            .proyecto {
-                max-width: 40%;
+            .proyecto.app {
+                max-width: 30%;
             }
         }
 
-        .tools {
-            font-size: 15px;
+        .col-md-12 {
+            padding: 125px 0;
         }
     }
 }
