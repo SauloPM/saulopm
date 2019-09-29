@@ -55,30 +55,31 @@ $desktop: 1200px;
             flex-direction: column;
             color: white;
             background: rgba(0,0,0,.95);
+            padding: 25px;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
             width: 100%;
+            overflow: hidden;
             opacity: 0;
             transition: .25s ease-in;
 
             .titulo {
-                font-size: 10px;
+                font-size: 8px;
                 text-transform: uppercase;
                 border-bottom: 1px solid rgba(255,255,255,.25);
                 white-space: nowrap;
                 letter-spacing: 5px;
                 padding: 0 15px 10px;
-                margin-bottom: 25px;
+                margin-bottom: 15px;
             }
 
             .herramientas {
-                font-size: 12px;
+                font-size: 10px;
                 text-align: center;
-                line-height: 20px;
-                margin-bottom: 50px;
+                line-height: 18px;
             }
 
             .enlace {
@@ -164,6 +165,8 @@ $desktop: 1200px;
 @media only screen and (min-width: $laptop) {
 
     #proyectos {
+
+        // Grid
 
         .col-md-4  {
             padding: 100px 0;
