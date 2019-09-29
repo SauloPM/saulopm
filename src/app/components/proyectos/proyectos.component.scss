@@ -41,7 +41,7 @@ $desktop: 1200px;
         transition: .5s ease-in-out;
 
         &.app { max-width: 200px; }
-        &.web { max-width: 350px; }
+        &.web { max-width: 275px; }
 
         img {
             display: block;
@@ -52,6 +52,13 @@ $desktop: 1200px;
 }
 
 // Mobile First
+
+@media only screen and (min-width: 400px) {
+
+    #proyectos .proyecto.web {
+        max-width: 350px;
+    }
+}
 
 @media only screen and (min-width: $mobile) {
 
@@ -158,7 +165,7 @@ $desktop: 1200px;
     opacity: .25;
 }
 
-.bg-aprosan::before           {
+.bg-aprosan::before {
     background-image: url('./../../../assets/img/proyectos/fondos/aprosan.jpg');
 }
 
@@ -166,10 +173,10 @@ $desktop: 1200px;
     background-image: url('./../../../assets/img/proyectos/fondos/estudiojuridicosg.jpg');
 }
 
-.bg-sententiapp-web::before       {
+.bg-sententiapp-web::before {
     background-image: url('./../../../assets/img/proyectos/fondos/sententiapp-web.jpg');
 }
 
-.bg-terapiaencasa::before     {
+.bg-terapiaencasa::before {
     background-image: url('./../../../assets/img/proyectos/fondos/terapiaencasa.jpg');
 }
