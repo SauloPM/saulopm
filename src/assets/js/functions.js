@@ -22,32 +22,46 @@ $(window).on("load", function(){
   //     PROYECTOS     //
   // ––––––––––––––––– //
 
-  $(document).on("mouseover", "#proyectos .proyecto", function() {
+  $(document).on("mouseover", "#proyectos .proyecto .caption:not(.visible)", function() {
+
+    var caption      = $(this);
+    var titulo       = $(this).find(".titulo");
+    var herramientas = $(this).find(".herramientas");
     
-    $(this).find(".caption").animate({ opacity: 1 }, 250);
+    caption.animate({ opacity: 1 }, 250);
 
     setTimeout(() => {
-      $(this).find(".caption .titulo").animate({ opacity: 1 }, 250);
+      titulo.animate({ opacity: 1 }, 250);
     }, 350);
 
     setTimeout(() => {
-      $(this).find(".caption .herramientas").animate({ opacity: 1 }, 250);
+      herramientas.animate({ opacity: 1 }, 250);
     }, 650);
+
+    setTimeout(() => {
+      caption.addClass("visible");
+    }, 750);
 
   });
 
-  $(document).on("mouseleave", "#proyectos .proyecto", function() {
-    
-    $(this).find(".caption .herramientas").animate({ opacity: 0 }, 250);
+  $(document).on("mouseleave", "#proyectos .proyecto .caption.visible", function() {
+
+    var caption      = $(this);
+    var titulo       = $(this).find(".titulo");
+    var herramientas = $(this).find(".herramientas");
+
+    herramientas.animate({ opacity: 0 }, 250);
 
     setTimeout(() => {
-      $(this).find(".caption .titulo").animate({ opacity: 0 }, 250);
+      titulo.animate({ opacity: 0 }, 250);
     }, 350);
 
     setTimeout(() => {
-      $(this).find(".caption").animate({ opacity: 0 }, 250);
+      caption.animate({ opacity: 0 }, 250);
     }, 650);
 
+    setTimeout(() => {
+      caption.removeClass("visible");
+    }, 750);
   });
-
 });
