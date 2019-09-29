@@ -53,8 +53,8 @@ $desktop: 1200px;
             align-items: center;
             justify-content: center;
             flex-direction: column;
-            color: white;
-            background: rgba(0,0,0,.95);
+            color: black;
+            background: white;
             padding: 25px;
             position: absolute;
             top: 0;
@@ -68,10 +68,11 @@ $desktop: 1200px;
 
             .titulo {
                 font-size: 8px;
+                text-align: center;
                 text-transform: uppercase;
-                border-bottom: 1px solid rgba(255,255,255,.25);
-                white-space: nowrap;
+                border-bottom: 1px solid rgba(0,0,0,.25);
                 letter-spacing: 5px;
+                line-height: 15px;
                 padding: 0 15px 10px;
                 margin-bottom: 15px;
             }
@@ -79,23 +80,7 @@ $desktop: 1200px;
             .herramientas {
                 font-size: 10px;
                 text-align: center;
-                line-height: 18px;
-            }
-
-            .enlace {
-                color: white;
-                font-size: 8px;
-                text-transform: uppercase;
-                text-decoration: none;
-                border: 1px solid rgb(255,255,255,.25);
-                letter-spacing: 2px;
-                padding: 15px 25px;
-                transition: .25s ease-in;
-
-                &:hover {
-                    color: rgba(0,0,0,.9);
-                    background: white;
-                }
+                line-height: 15px;
             }
         }
 
