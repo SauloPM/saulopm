@@ -32,7 +32,6 @@ $desktop: 1200px;
 
     .proyecto {
         display: block;
-        text-decoration: none;
         box-shadow: 25px 25px 75px black;
         margin: 0 auto;
         position: relative;
@@ -47,6 +46,60 @@ $desktop: 1200px;
             display: block;
             width: 100%;
             height: auto;
+        }
+
+        .caption {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            color: white;
+            background: rgba(0,0,0,.95);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            opacity: 0;
+            transition: .25s ease-in;
+
+            .titulo {
+                font-size: 10px;
+                text-transform: uppercase;
+                border-bottom: 1px solid rgba(255,255,255,.25);
+                white-space: nowrap;
+                letter-spacing: 5px;
+                padding: 0 15px 10px;
+                margin-bottom: 25px;
+            }
+
+            .herramientas {
+                font-size: 12px;
+                text-align: center;
+                line-height: 20px;
+                margin-bottom: 50px;
+            }
+
+            .enlace {
+                color: white;
+                font-size: 8px;
+                text-transform: uppercase;
+                text-decoration: none;
+                border: 1px solid rgb(255,255,255,.25);
+                letter-spacing: 2px;
+                padding: 15px 25px;
+                transition: .25s ease-in;
+
+                &:hover {
+                    color: rgba(0,0,0,.9);
+                    background: white;
+                }
+            }
+        }
+
+        &:hover .caption {
+            opacity: 1;
         }
     }
 }
