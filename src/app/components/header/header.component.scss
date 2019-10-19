@@ -70,5 +70,53 @@ $desktop: 1400px;
 
     #header h2 {
         font-size: 175px;
+        animation: efecto-glitch 1.5s ease-in-out infinite;
+    }
+}
+
+@keyframes efecto-glitch {
+    0% {  
+        transform: rotate(-12deg) translateY(0);
+        text-shadow: 
+            0 0 0 blue, 
+            0 0 0 cyan, 
+            0 0 0 red, 
+            0 0 0 yellow;
+    }
+
+    20% {  
+        transform: rotate(-12deg) translateY(-15px);
+        text-shadow: 
+            0   5px 0 blue,
+            0  10px 0 cyan,
+            0  -5px 0 red,
+            0 -10px 0 yellow;
+    }
+
+    40% {  
+        transform: rotate(-12deg) translateY(5px);
+        text-shadow: 
+            0 -7.5px 0 blue,
+            0  -15px 0 cyan,
+            0  7.5px 0 red,
+            0   15px 0 yellow;
+    }
+    
+   60% {
+        transform: rotate(-12deg) translateY(-2.5px);
+        text-shadow: 
+            0  2.5px 0 blue,
+            0    5px 0 cyan,
+            0 -2.5px 0 red,
+            0   -5px 0 yellow;
+    }
+
+    80% {  
+        transform: rotate(-12deg) translateY(0);
+        text-shadow: 
+            0 0 0 blue,
+            0 0 0 cyan,
+            0 0 0 red,
+            0 0 0 yellow;
     }
 }
