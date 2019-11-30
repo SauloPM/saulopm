@@ -34,7 +34,7 @@ $desktop: 1400px;
         text-align: center;
         text-transform: lowercase;
         margin: 0 auto;
-        transform: rotate(-12deg)
+        transform: rotate(-12deg);
     }
 }
 
@@ -62,6 +62,7 @@ $desktop: 1400px;
 
         h2 {
             font-size: 150px;
+            animation: efecto-glitch 1.5s ease-in-out infinite;
         }
     }
 }
@@ -70,7 +71,6 @@ $desktop: 1400px;
 
     #header h2 {
         font-size: 175px;
-        animation: efecto-glitch 1.5s ease-in-out infinite;
     }
 }
 
