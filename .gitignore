@@ -46,12 +46,13 @@ testem.log
 Thumbs.db
 
 # Fuentes
-/src/assets/fonts
+# /src/assets/fonts
 
 # Currículo
-/src/cv.pdf
+# /src/cv.pdf
 
 # Directorio de imágenes
-/src/assets/img
+# /src/assets/img
 
+# APK de SententiApp
 sententiapp.apk
