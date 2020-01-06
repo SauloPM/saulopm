@@ -62,7 +62,7 @@ $desktop: 1400px;
 
         h2 {
             font-size: 150px;
-            animation: efecto-glitch 1.5s ease-in-out infinite;
+            animation: efecto-glitch 3s ease-in-out infinite;
         }
     }
 }
@@ -84,7 +84,7 @@ $desktop: 1400px;
             0 0 0 yellow;
     }
 
-    20% {  
+    10% {  
         transform: rotate(-12deg) translateY(-15px);
         text-shadow: 
             0   5px 0 blue,
@@ -93,7 +93,7 @@ $desktop: 1400px;
             0 -10px 0 yellow;
     }
 
-    40% {  
+    20% {  
         transform: rotate(-12deg) translateY(5px);
         text-shadow: 
             0 -7.5px 0 blue,
@@ -102,7 +102,7 @@ $desktop: 1400px;
             0   15px 0 yellow;
     }
     
-   60% {
+   30% {
         transform: rotate(-12deg) translateY(-2.5px);
         text-shadow: 
             0  2.5px 0 blue,
@@ -111,7 +111,7 @@ $desktop: 1400px;
             0   -5px 0 yellow;
     }
 
-    80% {  
+    40% {  
         transform: rotate(-12deg) translateY(0);
         text-shadow: 
             0 0 0 blue,
