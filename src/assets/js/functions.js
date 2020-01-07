@@ -22,7 +22,7 @@ $(window).on("load", function(){
   //     PROYECTOS     //
   // ––––––––––––––––– //
 
-  $(document).on("mouseover", "#proyectos .proyecto .caption:not(.visible)", function() {
+  $(document).on("mouseover", "a#proyectos .proyecto .caption:not(.visible)", function() {
 
     var caption      = $(this);
     var titulo       = $(this).find(".titulo");
@@ -44,7 +44,7 @@ $(window).on("load", function(){
 
   });
 
-  $(document).on("mouseleave", "#proyectos .proyecto .caption.visible", function() {
+  $(document).on("mouseleave", "a#proyectos .proyecto .caption.visible", function() {
 
     var caption      = $(this);
     var titulo       = $(this).find(".titulo");

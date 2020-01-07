@@ -52,7 +52,6 @@ $desktop: 1200px;
             display: flex;
             align-items: center;
             justify-content: center;
-            flex-direction: column;
             color: black;
             background: rgba(255,255,255,.95);
             padding: 25px;
@@ -64,30 +63,79 @@ $desktop: 1200px;
             width: 100%;
             overflow: hidden;
             opacity: 0;
+            transition: .5s ease-out;
+            cursor: pointer;
 
             .titulo {
-                font-size: 8px;
+                font-size: 10px;
                 text-align: center;
                 text-transform: uppercase;
                 border-bottom: 1px solid rgba(0,0,0,.25);
                 letter-spacing: 5px;
                 line-height: 15px;
-                padding: 0 15px 10px;
-                margin-bottom: 15px;
+                padding: 10px 15px;
                 opacity: 0;
             }
 
-            .herramientas {
-                font-size: 10px;
-                text-align: center;
-                line-height: 15px;
-                opacity: 0;
+            .enlaces {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                bottom: 35px;
+                width: 100%;
+                
+                .enlace {
+                    color: rgba(255,255,255,.75);
+                    background: linear-gradient(to right, $primary, rgba(255,0,35,.8));
+                    font-size: 10px;
+                    font-weight: bolder;
+                    text-align: center;
+                    text-decoration: none;
+                    border-radius: 2px;
+                    box-shadow: 0 15px 20px -10px black;
+                    padding: 10px;
+                    margin: 0 10px;
+                    position: relative;
+                    width: 105px;
+                    opacity: 0;
+                    transition: .25s ease-in;
+                }
             }
         }
 
         &:hover {
             transform: scale(1.01);
+
+            .caption {
+                opacity: 1;
+
+                .titulo {
+                    animation: mostrar .25s .15s forwards ease-out;
+                }
+
+                .enlace {
+                    animation: mostrar .35s .25s forwards ease-out;
+
+                    &:last-child {
+                        animation: mostrar .35s .5s forwards ease-out;
+                    }
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
         }
+    }
+}
+
+@keyframes mostrar {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
