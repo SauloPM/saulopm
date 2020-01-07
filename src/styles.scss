@@ -127,10 +127,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: white !important;
     font-size: 14px;
     font-weight: 200;
-    text-decoration: none;
+    text-decoration: none !important;
     background: $primary;
     background: linear-gradient($primary, $darkprimary);
     border-radius: 2px;
