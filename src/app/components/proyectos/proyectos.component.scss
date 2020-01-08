@@ -99,7 +99,7 @@ $desktop: 1200px;
                     position: relative;
                     width: 105px;
                     opacity: 0;
-                    transition: .25s ease-in;
+                    transition: .15s ease-out;
                 }
             }
         }
@@ -122,7 +122,7 @@ $desktop: 1200px;
                     }
 
                     &:hover {
-                        transform: scale(1.1);
+                        transform: scale(1.05);
                     }
                 }
             }
