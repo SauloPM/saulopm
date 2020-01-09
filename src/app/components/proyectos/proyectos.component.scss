@@ -282,7 +282,12 @@ $desktop: 1200px;
         .modal-content {
             border: none;
             border-radius: 0;
-            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            overflow: auto;
 
             .modal-body {
                 display: flex;
@@ -297,7 +302,7 @@ $desktop: 1200px;
                     font-family: 'Selima', sans-serif;
                     text-align: center;
                     text-transform: lowercase;
-                    padding: 0 15px;
+                    padding: 0 50px;
                     transform: rotate(-5deg);
 
                     background: linear-gradient(to right, $primary, rgba(255,0,35,.75));
