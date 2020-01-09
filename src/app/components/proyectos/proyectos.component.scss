@@ -306,10 +306,6 @@ $desktop: 1200px;
                 }
 
                 .texto {
-                    font-size: 13px;
-                    text-align: justify;
-                    text-align-last: center;
-                    line-height: 30px;
                     width: 100%;
                     max-width: 500px;
 
@@ -321,7 +317,15 @@ $desktop: 1200px;
                         letter-spacing: 5px;
                         line-height: 15px;
                         padding: 10px 15px;
-                        margin: 40px 0 50px;
+                        margin: 15px 0 50px;
+                    }
+
+                    .parrafo {
+                        font-size: 13px;
+                        text-align: justify;
+                        text-align-last: center;
+                        line-height: 30px;
+                        margin-bottom: 25px;
                     }
 
                     .herramientas {
@@ -335,6 +339,7 @@ $desktop: 1200px;
                             align-items: center;
                             justify-content: center;
                             color: $primary;
+                            background: linear-gradient(white, rgba(255,0,35,.1));
                             font-size: 12px;
                             font-weight: 700;
                             border-radius: 25px;
