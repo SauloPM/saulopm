@@ -6,10 +6,10 @@
             <div class="modal-body">
                 
                 <!-- Botón de cierre -->
-                <button type="button" class="close" (click)="cerrarModal()">&times;</button>
+                <button type="button" class="close" (click)="cerrarModal()" [style.color]="proyecto.colores[0]">&times;</button>
 
                 <!-- Título -->
-                <span class="titulo">{{ proyecto.titulo }}</span>
+                <span class="titulo" [ngStyle]=" { 'background': 'linear-gradient(to right, ' + proyecto.colores[0] + ' , ' + proyecto.colores[1] + ')', '-webkit-background-clip': 'text', '-webkit-text-fill-color': 'transparent' }">{{ proyecto.titulo }}</span>
 
                 <span class="texto">
                     
@@ -20,7 +20,7 @@
                     <!-- Herramientas -->
                     <div class="apartado">Herramientas</div>
                     <div class="herramientas">
-                        <span class="pildora" *ngFor="let herramienta of proyecto.herramientas">{{ herramienta }}</span>
+                        <span class="pildora" [ngStyle]=" { 'color': proyecto.colores[0], 'box-shadow': '0 0 5px -1px ' + proyecto.colores[0] }" *ngFor="let herramienta of proyecto.herramientas">{{ herramienta }}</span>
                     </div>
                     
                 </span>

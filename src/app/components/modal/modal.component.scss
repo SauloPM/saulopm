@@ -46,9 +46,9 @@ $desktop: 1200px;
                     padding: 0 50px;
                     transform: rotate(-5deg);
 
-                    background: linear-gradient(to right, $primary, rgba(255,0,35,.75));
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    // background: linear-gradient(to right, $primary, rgba(255,0,35,.75));
+                    // -webkit-background-clip: text;
+                    // -webkit-text-fill-color: transparent;
                 }
 
                 .texto {
@@ -88,7 +88,6 @@ $desktop: 1200px;
                             font-size: 12px;
                             font-weight: 700;
                             border-radius: 25px;
-                            box-shadow: 0 0 5px -2px $primary;
                             margin: 0 3px 6px;
                             padding: 2px 20px;
                             width: fit-content;
@@ -110,7 +109,6 @@ $desktop: 1200px;
                     transition: .25s ease-in;
 
                     &:hover {
-                        color: $primary;
                         opacity: 1;
                     }
                 }
