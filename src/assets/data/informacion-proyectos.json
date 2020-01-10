@@ -5,16 +5,23 @@
             "Página web de Obed Guerra Jiménez, diseñador gráfico. En ella se encuentra un amplio catálogo de proyectos de todo tipo, desde ilustración hasta branding. Con ello, se pretende que el usuario pueda conocer su trabajo en diferentes campos del diseño. Otros aspectos comunes en páginas de este tipo, como la carta de presentación, los conocimientos y habilidades, así como el formulario de contacto, no forman parte de la página principal, dado que hemos querido enfocarnos en que la primera impresión se base en su trabajo, en dejar que los hechos hablen por sí solos."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Font Awesome" ],
-        "colores": [ "#ff0037", "#ff00dc" ]
+        "colores": [ "#ff0037", "#ff00dc" ],
+        "link": "https://saulopm.com/proyectos/obedguerra",
+        "tipo": "web"
     },
     "Aprosan": {
         "titulo": "Aprosán",
         "informacion": [
-            "Página web de Aprosán, asesoría online para personal sanitario. He utilizado el azul y el blanco como colores corporativos, algo muy común en páginas web del sector sanitario. Para darle un toque más fresco y moderno, he jugado con la opacidad y los gradientes. También he incluido animaciones, todo ello con el fin de mejorar la experiencia de usuario.",
-            "Además de diseñar la página web, diseñé también el logotipo. He utilizado un fonendoscopio para sustituir la letra inicial del nombre de la compañía. Por otro lado, su extremo viene a emular una tilde. Me ha parecido apropiado, dado que este dispositivo se utiliza para escuchar los latidos del corazón. Con ello, quería expresar protección. Para mantener la coherencia con el color corporativo y el logotipo, he utilizado imágenes en las que el azul y el blanco estuvieran presentes o en las que apareciera un fonendoscopio."
+            "Página web de Aprosán, asesoría online para personal sanitario. Entre sus servicios se encuentran la contabilidad de facturas, la presentación de modelos a Hacienda y a la Seguridad Social, la declaración de la renta y asesoramiento personalizado. En un tiempo en el que la digitalización se impone a pasos agigantados en nuestra vida cotidiana, una asesoría online se presenta como un candidato sólido ante las convencionales. Una de sus grandes ventajas es que ofrece precios más competitivos, entre otras."
+        ],
+        "branding": [
+            "He utilizado el azul y el blanco como colores corporativos, algo muy común en páginas web del sector sanitario. Para darle un toque más fresco y moderno, he jugado con la opacidad y los gradientes. También he incluido animaciones, todo ello con el fin de mejorar la experiencia de usuario. Para mantener la coherencia con los colores corporativos y el logotipo, he utilizado imágenes en las que el azul y el blanco estuvieran presentes o en las que apareciera un fonendoscopio.",
+            "Además de crear la página web, me encargué del diseño del logotipo. He utilizado un fonendoscopio para sustituir la letra inicial del nombre de la compañía. El extremo del mismo viene a emular una tilde. Me ha parecido apropiado, dado que este dispositivo se utiliza para escuchar los latidos del corazón. Con ello, quería expresar protección."
         ],
         "herramientas": [ "Angular", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "PHP", "Git", "Font Awesome" ],
-        "colores": [ "#00b4ff", "#00ebff" ]
+        "colores": [ "#00b4ff", "#00ebff" ],
+        "link": "https://aprosan.es",
+        "tipo": "web"
     },
     "SententiApp": {
         "titulo": "SententiApp",
@@ -23,16 +30,22 @@
             "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma escribiendo en un teléfono móvil, dado que se trata de una app móvil en la que se encuentran sentencias escritas por autores clásicos, que comúnmente escribían con pluma. El texto utiliza una tipografía gruesa con sefira. El teléfono móvil y el gradiente hacen de elementos modernos, mientras que la pluma y la serifa hacen de elementos con un look más antiguo. Esta combinación nos ofrece una mayor holgura a la hora de diseñar la interfaz web."
         ],
         "herramientas": [ "Ionic", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "rgb(225,165,75)", "rgba(225,165,75,.75)" ]
+        "colores": [ "rgb(225,165,75)", "rgba(225,165,75,.75)" ],
+        "link": "assets/sententiapp.apk",
+        "tipo": "app"
     },
     "SententiAppWeb": {
         "titulo": "SententiApp",
         "informacion": [
-            "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un panel de administración que permita a los investigadores y lingüistas incorporar datos en el sistema que posteriormente sustentarán una app móvil a través de una API. El color corporativo es el dorado. Para no congestionar la interfaz, hemos hecho un gran uso del color blanco. La app móvil la puedes encontrar en este catálogo de proyectos.",
-            "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma escribiendo en un teléfono móvil, dado que se trata de una app móvil en la que se encuentran sentencias escritas por autores clásicos, que comúnmente escribían con pluma. El texto utiliza una tipografía gruesa con sefira. El teléfono móvil y el gradiente hacen de elementos modernos, mientras que la pluma y la serifa hacen de elementos con un look más antiguo. Esta combinación nos ofrece una mayor holgura a la hora de diseñar la interfaz web."
+            "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un panel de administración que permita a los investigadores y lingüistas incorporar datos en el sistema que posteriormente sustentarán una app móvil a través de una API. Si deseas conocer más información de la app, puedes encontrarla en este catálogo de proyectos."
+        ],
+        "branding": [
+            "El color corporativo es el dorado. Para no congestionar la interfaz, hemos hecho uso del color blanco. Además de crear la página web, me encargué del diseño del logotipo. Encima del texto vemos una pluma escribiendo en un teléfono móvil. El motivo de estos dos elementos residen en que, como ya expliqué, este panel de administración proveerá de los datos necesarios a una app móvil. Dichos datos son sentencias escritas por autores clásicos, que comúnmente escribían con pluma. El texto utiliza una tipografía gruesa con sefira. El teléfono móvil y el uso de gradientes le dan un aire más moderno, mientras que la pluma y la serifa le dan un aire más atávico. Este contraste nos ofrece una mayor holgura a la hora de diseñar la interfaz web."
         ],
         "herramientas": [ ".NET", "C#", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "Microsoft Azure", "Inkscape", "Font Awesome" ],
-        "colores": [ "rgb(225,165,75)", "rgba(225,165,75,.75)" ]
+        "colores": [ "rgb(225,165,75)", "rgba(225,165,75,.75)" ],
+        "link": "https://sententiapp.iatext.ulpgc.es",
+        "tipo": "web"
     },
     "ExcerptaAnotacion": {
         "titulo": "Proyecto Excerpta",
@@ -41,7 +54,9 @@
             "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma atravesando una nube, dado que se almacenan extractos provenientes de textos latinos renacentistas en la nube, que comúnmente escribían con pluma. La tipografía seleccionada es Giza, que además de ser gruesa tener serifa, tiene una forma redondeada para mantener coherencia visual con la nube."
         ],
         "herramientas": [ ".NET", "C#", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "Microsoft Azure", "Inkscape", "Font Awesome" ],
-        "colores": [ "rgb(50,125,185)", "rgba(50,125,185,.75)"]
+        "colores": [ "rgb(50,125,185)", "rgba(50,125,185,.75)"],
+        "link": "https://anotaexcerpta.iatext.ulpgc.es",
+        "tipo": "web"
     },
     "ExcerptaBusqueda": {
         "titulo": "Proyecto Excerpta",
@@ -50,7 +65,9 @@
             "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma atravesando una nube, dado que se almacenan extractos provenientes de textos latinos renacentistas en la nube, que comúnmente escribían con pluma. La tipografía seleccionada es Giza, que además de ser gruesa tener serifa, tiene una forma redondeada para mantener coherencia visual con la nube."
         ],
         "herramientas": [ ".NET", "C#", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "Microsoft Azure", "Inkscape" ],
-        "colores": [ "orange", "#ffcd32" ]
+        "colores": [ "orange", "#ffcd32" ],
+        "link": "https://excerpta.iatext.ulpgc.es",
+        "tipo": "web"
     },
     "BubbleGlasses": {
         "titulo": "BubbleGlasses!",
@@ -58,7 +75,9 @@
             "Página web de BubbleGlasses. Esta web fue creada durante mis estudios de inglés en la Escuela Oficial de Idiomas. Teníamos que presentar un producto ficticio y como apoyo creé una web para amenizar la exposición en lugar de utilizar la clásica presentación de PowerPoint. Consiste en unas gafas de sol que cumplen tus deseos. Es bastante colorida e interactiva. Debido a que este producto no existe, varios de los elementos están deshabilitados, como los enlaces a las redes sociales o el formulario de contacto."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "#37ff7d", "yellow" ]
+        "colores": [ "#37ff7d", "yellow" ],
+        "link": "https://saulopm.com/proyectos/bubbleglasses",
+        "tipo": "web"
     },
     "PatriciaCV": {
         "titulo": "PatriciaCV",
@@ -66,7 +85,9 @@
             "Portfolio online de Patricia Poveda Montesdeoca. Es un regalo de cumpleaños que le hice a una de mis hermanas para ayudarla a conseguir trabajo. Con ello pretendo que a la hora de presentarse a una oferta de trabajo, pueda incluir un link a esta página web y diferenciarse, de este modo, del resto de posibles candidatos, al contar con una mayor presencia web. De esta manera se ofrece la información necesaria en un formato más moderno, interactivo y amigable que el formato convencional ofrecido por una hoja de papel o un fichero PDF."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Font Awesome" ],
-        "colores": [ "#4bbee1", "rgba(75,190,225,.75)" ]
+        "colores": [ "#4bbee1", "rgba(75,190,225,.75)" ],
+        "link": "https://saulopm.com/proyectos/patriciacv",
+        "tipo": "web"
     },
     "SoledadParalegal": {
         "titulo": "Soledad Paralegal",
@@ -76,7 +97,9 @@
             "Además de diseñar la página web, diseñé también el logotipo. El símbolo que aparece encima del texto es una S mayúscula (la inicial del nombre de mi hermana) que se combina con una columna griega enrollándose por sus extremos a modo de pergamino. Mediante el dibujo intento darle un aspecto clásico. No obstante, utilizo una tipografía moderna con serifa para evitar que el conjunto se viera anticuado. El uso de elementos griegos en el símbolo se debe a que el Derecho Griego fue el precursor intelectual y la fuente del Derecho Romano."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "#af32ff", "#824bff" ]
+        "colores": [ "#af32ff", "#824bff" ],
+        "link": "https://saulopm.com/proyectos/soledadparalegal",
+        "tipo": "web"
     },
     "EstudioJuridicoSanGregorio": {
         "titulo": "Estudio Jurídico San Gregorio",
@@ -84,7 +107,9 @@
             "Página web del Estudio Jurídico San Gregorio. Además de diseñar la página web, diseñé también el logotipo. El símbolo que aparece encima del texto representa la cabeza de la diosa griega de la justicia Themis. Esta tiene una venda en los ojos y una corona de olivos. El diseño es simple, no orgánico, sin excesos en decorados ni elementos innecesarios para darle un aspecto más moderno. El uso de elementos griegos en el símbolo se debe a que el Derecho Griego fue el precursor intelectual y la fuente del Derecho Romano."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "rgb(100,100,100)", "rgba(100,100,100,.75)" ]
+        "colores": [ "rgb(100,100,100)", "rgba(100,100,100,.75)" ],
+        "link": "https://estudiojuridicosg.com",
+        "tipo": "web"
     },
     "JCAbogada": {
         "titulo": "JC Abogada",
@@ -94,7 +119,9 @@
             "Además de diseñar la página web, diseñé también los dos logotipos: uno más compacto y otro más grande y decorativo. Este último utiliza una tipografía principal fina que intenta emular una caligrafía. He alargado sus extremos y obviado las mayúsculas para darle un aire desenfadado y moderno. La tipografía secundaria carece de serifa y es más fina para evitar así sobrecargar el logotipo. También me encargué de la imagen corporativa en Facebook, así como del diseño de las tarjetas de contacto."
         ],
         "herramientas": [ "WordPress", "Tema Enfold", "Page Builder Avia", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape" ],
-        "colores": [ "hotpink", "#ff1496" ]
+        "colores": [ "hotpink", "#ff1496" ],
+        "link": "https://jcabogada.com",
+        "tipo": "web"
     },
     "NidoDePioPio": {
         "titulo": "Nido de Pío Pío",
@@ -102,7 +129,9 @@
             "Página web de El Nido de Pío Pío, guardería. No se cuenta con un solo color corporativo. Se hace un uso excesivo de muchos colores y gradientes para trasmitir desorden, diversión rebeldía, evocando con ello la infancia. La tipografía utilizada emula una caligrafía infantil, pero sin sacrificar la legibilidad. El sitio cuenta con una galería de imágenes de tipo Masonry y de un carrusel para ilustrar los servicios ofrecidos. He creado diferentes bordes para separar las secciones entre sí emulando olas o dándole un efecto brush. Asimismo, las imágenes seleccionadas son muy coloridas y mezclan juguetes con naturaleza."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "#00dce1", "aqua" ]
+        "colores": [ "#00dce1", "aqua" ],
+        "link": "https://saulopm.com/proyectos/nidodepiopio",
+        "tipo": "web"
     },
     "TerapiaEnCasa": {
         "titulo": "Terapia en Casa",
@@ -111,7 +140,9 @@
             "Además de diseñar la página web, diseñé también el logotipo. Encima del texto vemos un boceto de un psicólogo dentro de una casa. Con ello pretendemos transmitir que puedes recibir un tratamiento psicológico desde el calor y la comodidad de tu hogar, todo ello gracias a Internet. La tipografía principal del texto emula una caligrafía en cursiva poco ostentosa, para transmitir cercanía."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "#afb455", "#967332" ]
+        "colores": [ "#afb455", "#967332" ],
+        "link": "https://terapiaencasa.es",
+        "tipo": "web"
     },
     "GuiaDeAngular": {
         "titulo": "Guía de Angular",
@@ -119,6 +150,8 @@
             "Página web con una guía elaborada por mí durante mi formación en un curso de Angular. Con ello pretendo tener a mano la descripción escrita del proceso de elaboración de diferentes operaciones utilizando este framework (manejo de formularios, login y registro, operaciones HTTP, interacción con la base de datos...), así como anotaciones sobre los recursos que este nos brinda (componentes, módulos, directivas, pipes...), todo ello de manera directa y resumida. No está terminada."
         ],
         "herramientas": [ "Angular", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Font Awesome" ],
-        "colores": [ "rgb(50,55,70)", "rgba(50,55,70,.75)" ]
+        "colores": [ "rgb(50,55,70)", "rgba(50,55,70,.75)" ],
+        "link": "https://saulopm.com/proyectos/guia-angular",
+        "tipo": "web"
     }
 }

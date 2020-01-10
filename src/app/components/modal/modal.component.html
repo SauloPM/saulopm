@@ -9,13 +9,20 @@
                 <button type="button" class="close" (click)="cerrarModal()" [style.color]="proyecto.colores[0]">&times;</button>
 
                 <!-- Título -->
-                <span class="titulo" [ngStyle]=" { 'background': 'linear-gradient(to right, ' + proyecto.colores[0] + ' , ' + proyecto.colores[1] + ')', '-webkit-background-clip': 'text', '-webkit-text-fill-color': 'transparent' }">{{ proyecto.titulo }}</span>
+                <span class="titulo" [ngStyle]=" { 'background': 'linear-gradient( to right, ' + proyecto.colores[0] + ' , ' + proyecto.colores[1] + ')', '-webkit-background-clip': 'text', '-webkit-text-fill-color': 'transparent' }">{{ proyecto.titulo }}</span>
 
                 <span class="texto">
                     
                     <!-- Información -->
                     <div class="apartado margin-top-0">Información</div>
                     <div class="parrafo" *ngFor="let parrafo of proyecto.informacion">{{ parrafo }}</div>
+
+                    <a class="enlace" [href]="proyecto.link" target="_blank" [ngStyle]="{ 'color': proyecto.colores[0], 'border': '1px solid ' + proyecto.colores[0] }">{{ textoBoton }}</a>
+
+                    <ng-container *ngIf="proyecto.branding">
+                        <div class="apartado">Diseño</div>
+                        <div class="parrafo" *ngFor="let parrafo of proyecto.branding">{{ parrafo }}</div>
+                    </ng-container>
 
                     <!-- Herramientas -->
                     <div class="apartado">Herramientas</div>

@@ -17,6 +17,7 @@ export class ModalComponent implements OnInit {
   @Output() dispararCierreModal: EventEmitter<string>;
 
   proyecto: any = {};
+  textoBoton = 'Visitar';
 
   constructor() {
     this.dispararCierreModal = new EventEmitter();
@@ -24,6 +25,7 @@ export class ModalComponent implements OnInit {
 
   ngOnInit() {
     this.proyecto = ( proyectos as any ).default[ this.proyectoID ];
+    this.textoBoton = this.proyecto.tipo === 'web' ? 'Visitar web' : 'Descargar APK';
   }
 
   cerrarModal() {
