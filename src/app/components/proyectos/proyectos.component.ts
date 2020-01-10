@@ -7,6 +7,18 @@ import { Component } from '@angular/core';
 })
 export class ProyectosComponent {
 
+  proyectoID: string;
+  mostrarModal = false;
+
   constructor() { }
+
+  abrirModal( id: string ) {
+    this.mostrarModal = true;
+    this.proyectoID = id;
+  }
+
+  cerrarModal() {
+    this.mostrarModal = false;
+  }
 
 }
