@@ -1,0 +1,30 @@
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Contenido -->
+            <div class="modal-body">
+                
+                <!-- Botón de cierre -->
+                <button type="button" class="close" (click)="cerrarModal()">&times;</button>
+
+                <!-- Título -->
+                <span class="titulo">{{ proyecto.titulo }}</span>
+
+                <span class="texto">
+                    
+                    <!-- Información -->
+                    <div class="apartado margin-top-0">Información</div>
+                    <div class="parrafo" *ngFor="let parrafo of proyecto.informacion">{{ parrafo }}</div>
+
+                    <!-- Herramientas -->
+                    <div class="apartado">Herramientas</div>
+                    <div class="herramientas">
+                        <span class="pildora" *ngFor="let herramienta of proyecto.herramientas">{{ herramienta }}</span>
+                    </div>
+                    
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
