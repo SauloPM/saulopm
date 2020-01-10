@@ -4,7 +4,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 // import { Proyecto } from '';
 
 // Assets
-import * as data from '../../../assets/data/informacion-proyectos.json';
+import * as proyectos from '../../../assets/data/informacion-proyectos.json';
 
 @Component({
   selector: 'app-modal',
@@ -14,20 +14,20 @@ import * as data from '../../../assets/data/informacion-proyectos.json';
 export class ModalComponent implements OnInit {
 
   @Input() proyectoID: string;
-  @Output() parametroSalida: EventEmitter<string>;
+  @Output() dispararCierreModal: EventEmitter<string>;
 
   proyecto: any = {};
 
   constructor() {
-    this.parametroSalida = new EventEmitter();
+    this.dispararCierreModal = new EventEmitter();
   }
 
   ngOnInit() {
-    this.proyecto = ( data as any ).default[ this.proyectoID ];
+    this.proyecto = ( proyectos as any ).default[ this.proyectoID ];
   }
 
   cerrarModal() {
-    this.parametroSalida.emit( this.proyectoID );
+    this.dispararCierreModal.emit( this.proyectoID );
   }
 
 }

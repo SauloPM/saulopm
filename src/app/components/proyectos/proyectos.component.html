@@ -220,7 +220,7 @@
     </div>
 </section>
 
-<app-modal [proyectoID]="proyectoID" *ngIf="mostrarModal" (parametroSalida)="cerrarModal( $event )"></app-modal>
+<app-modal [proyectoID]="proyectoID" *ngIf="mostrarModal" (dispararCierreModal)="cerrarModal( $event )"></app-modal>
 
 <!-- Obed Guerra Design -->
 <div class="modala fadea" id="modalObedGuerraDesign">
