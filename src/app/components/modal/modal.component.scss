@@ -51,7 +51,7 @@ $desktop: 1200px;
                     // -webkit-text-fill-color: transparent;
                 }
 
-                .texto {
+                .contenido {
                     width: 100%;
                     max-width: 500px;
 
@@ -62,8 +62,8 @@ $desktop: 1200px;
                         border-bottom: 1px solid rgba(0,0,0,.25);
                         letter-spacing: 5px;
                         line-height: 15px;
-                        padding: 10px 15px;
-                        margin: 15px 0 50px;
+                        padding: 0 15px 10px;
+                        margin: 30px 0 50px;
                     }
 
                     .parrafo {
@@ -75,20 +75,19 @@ $desktop: 1200px;
                     }
 
                     .enlace {
-                        display: block;
                         font-size: 13px;
-                        text-align: center;
                         text-decoration: none;
-                        border-radius: 2px;
-                        padding: 10px;
-                        margin: 0 auto 25px;
-                        position: relative;
-                        transition: .15s ease-out;
-                        width: 100%;
+                        transition: .25s ease-out;
 
                         &:hover {
-                            transform: scale(1.05);
+                            opacity: .75;
                         }
+                    }
+
+                    .logo {
+                        margin-bottom: 45px;
+                        width: 100%;
+                        height: auto;
                     }
 
                     .herramientas {
@@ -112,21 +111,37 @@ $desktop: 1200px;
                     }
                 }
 
-                .close {
-                    color: black;
-                    font-size: 100px;
-                    font-weight: 200;
-                    font-family: 'Nunito';
-                    outline: none;
-                    line-height: 55px;
+                .cierre {
                     position: absolute;
                     top: 50px;
                     right: 50px;
-                    opacity: .15;
+                    width: 75px;
+                    height: 75px;
+                    opacity: .35;
                     transition: .25s ease-in;
+                    cursor: pointer;
 
                     &:hover {
                         opacity: 1;
+                    }
+
+                    &:before,
+                    &:after {
+                        content: '';
+                        background: black;
+                        top: 50%;
+                        left: 0;
+                        position: absolute;
+                        width: 75px;
+                        height: 1px;
+                    }
+
+                    &:before {
+                        transform: rotate(45deg);
+                    }
+
+                    &:after {
+                        transform: rotate(-45deg);
                     }
                 }
             }

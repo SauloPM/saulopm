@@ -1,8 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-// Interfaces
-// import { Proyecto } from '';
-
 // Assets
 import * as proyectos from '../../../assets/data/informacion-proyectos.json';
 
