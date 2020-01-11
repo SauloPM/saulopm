@@ -29,13 +29,20 @@
     "SententiApp": {
         "titulo": "SententiApp",
         "informacion": [
-            "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un panel de administración que permita a los investigadores y lingüistas incorporar datos en el sistema que posteriormente sustentarán una app móvil a través de una API. El color corporativo es el dorado. Para no congestionar la interfaz, hemos hecho un gran uso del color blanco. La app móvil la puedes encontrar en este catálogo de proyectos.",
-            "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma escribiendo en un teléfono móvil, dado que se trata de una app móvil en la que se encuentran sentencias escritas por autores clásicos, que comúnmente escribían con pluma. El texto utiliza una tipografía gruesa con serifa. El teléfono móvil y el gradiente hacen de elementos modernos, mientras que la pluma y la serifa hacen de elementos con un look más antiguo. Esta combinación nos ofrece una mayor holgura a la hora de diseñar la interfaz web."
+            "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un catálogo de sentencias de autores para un enfoque académico, permitiendo abrir debates para contrastar el pensamiento del antaño con el del presente ante temas de gran relevancia en la actualidad, como el feminismo, la naturaleza, etc. Los datos que sustentan esta app fueron integrados en el sistema mediante un panel de administración que lleva el mismo nombre. Puedes encontrar más información de esta última en este catálogo de proyectos."
+        ],
+        "interfaz": [
+            "El dorado y el blanco se utilizan como colores corporativos, el primero para darle un toque clásico y el segundo para paliar los efectos del dorado y evitar congestionar la interfaz. Dado que va dirigido a un público más joven, tiene un aspecto serio, pero moderno. Se ha hecho un mayor uso del lenguaje visual, omitiendo información innecesaria en formato de texto."
+        ],
+        "logotipo": [
+            "Encima del texto vemos una pluma escribiendo en un teléfono móvil. El motivo de estos dos elementos reside en que, como ya expliqué, este panel de administración proveerá de los datos necesarios a una app móvil. Dichos datos son sentencias escritas por autores clásicos, que comúnmente escribían con pluma.",
+            "Por otro lado, el texto utiliza una tipografía gruesa con serifa. El teléfono móvil y el uso de gradientes le dan un aire más moderno, mientras que la pluma y la serifa le dan un aire más atávico. Este contraste ofrece una mayor holgura a la hora de diseñar la interfaz web."
         ],
         "herramientas": [ "Ionic", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Firebase", "Inkscape", "Font Awesome" ],
         "colores": [ "rgb(225,165,75)", "rgba(225,165,75,.75)" ],
         "link": "assets/sententiapp.apk",
-        "tipo": "app"
+        "tipo": "app",
+        "mockup": "sententiapp.jpg"
     },
     "SententiAppWeb": {
         "titulo": "SententiApp",
@@ -94,7 +101,7 @@
     "BubbleGlasses": {
         "titulo": "BubbleGlasses!",
         "informacion": [
-            "Página web de BubbleGlasses. Esta web fue creada durante mis estudios de inglés en la Escuela Oficial de Idiomas. Teníamos que presentar un producto ficticio y como apoyo creé una web para amenizar la exposición en lugar de utilizar la clásica presentación de PowerPoint. Consiste en unas gafas de sol que cumplen tus deseos. Es bastante colorida e interactiva. Debido a que este producto no existe, varios de los elementos están deshabilitados, como los enlaces a las redes sociales o el formulario de contacto."
+            "Página web de BubbleGlasses. Esta web fue creada mientras cursaba el B1 en inglés en la Escuela Oficial de Idiomas. Teníamos que presentar un producto ficticio y como apoyo creé una página web para amenizar la exposición en lugar de utilizar la clásica presentación de PowerPoint. Este producto consiste en unas gafas de sol que cumplen tus deseos. Debido a que este producto no existe, varios de los elementos están deshabilitados, como los enlaces a las redes sociales o el formulario de contacto. La interfaz es bastante colorida. Se hace uso de animaciones para darle un aspecto más juvenil y hacer que la presentación fuera más amena."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
         "colores": [ "#37ff7d", "yellow" ],
@@ -104,7 +111,7 @@
     "PatriciaCV": {
         "titulo": "PatriciaCV",
         "informacion": [
-            "Portfolio online de Patricia Poveda Montesdeoca. Es un regalo de cumpleaños que le hice a una de mis hermanas para ayudarla a conseguir trabajo. Con ello pretendo que a la hora de presentarse a una oferta de trabajo, pueda incluir un link a esta página web y diferenciarse, de este modo, del resto de posibles candidatos, al contar con una mayor presencia web. De esta manera se ofrece la información necesaria en un formato más moderno, interactivo y amigable que el formato convencional ofrecido por una hoja de papel o un fichero PDF."
+            "Portfolio online de Patricia Poveda Montesdeoca. Es un regalo de cumpleaños que le hice a una de mis hermanas porque me pareció una idea práctica y original. Es bien sabido que el formato de presentación ante oferta de trabajo es de vital importancia. Contar con una página web supone un factor de diferenciación que puede brindarte cierta ventaja ante otros posibles candidatos. De esta manera se ofrece la información necesaria en un formato más moderno, interactivo y amigable que el formato convencional ofrecido comúnmente en una hoja de papel o un fichero PDF."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Font Awesome" ],
         "colores": [ "#4bbee1", "rgba(75,190,225,.75)" ],
