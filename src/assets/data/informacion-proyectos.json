@@ -2,7 +2,7 @@
     "ObedGuerraDesign": {
         "titulo": "Obed Guerra Design",
         "informacion": [
-            "Página web de Obed Guerra Jiménez, diseñador gráfico. En ella se encuentra un amplio catálogo de proyectos de todo tipo, desde ilustración hasta branding. Con ello, se pretende que el usuario pueda conocer su trabajo en diferentes campos del diseño. Otros aspectos comunes en páginas de este tipo, como la carta de presentación, los conocimientos y habilidades, así como el formulario de contacto, no forman parte de la página principal, dado que hemos querido enfocarnos en que la primera impresión se base en su trabajo, en dejar que los hechos hablen por sí solos."
+            "Página web de Obed Guerra Jiménez, diseñador gráfico. En ella se encuentra un amplio catálogo de proyectos de todo tipo, desde ilustración hasta branding. Con ello, se pretende que el usuario pueda conocer su trabajo en diferentes campos del diseño. Otros aspectos comunes en páginas de este tipo, como la carta de presentación, los conocimientos y habilidades, así como el formulario de contacto, no forman parte de la página principal, dado que hemos querido enfocarnos en que la primera impresión se basara en su trabajo."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Font Awesome" ],
         "colores": [ "#ff0037", "#ff00dc" ],
@@ -14,22 +14,25 @@
         "informacion": [
             "Página web de Aprosán, asesoría online para personal sanitario. Entre sus servicios se encuentran la contabilidad de facturas, la presentación de modelos a Hacienda y a la Seguridad Social, la declaración de la renta y asesoramiento personalizado. En un tiempo en el que la digitalización se impone a pasos agigantados en nuestra vida cotidiana, una asesoría online se presenta como un candidato sólido ante las convencionales. Una de sus grandes ventajas es que ofrece precios más competitivos, entre otras."
         ],
-        "branding": [
-            "He utilizado el azul y el blanco como colores corporativos, algo muy común en páginas web del sector sanitario. Para darle un toque más fresco y moderno, he jugado con la opacidad y los gradientes. También he incluido animaciones, todo ello con el fin de mejorar la experiencia de usuario. Para mantener la coherencia con los colores corporativos y el logotipo, he utilizado imágenes en las que el azul y el blanco estuvieran presentes o en las que apareciera un fonendoscopio.",
-            "Además de crear la página web, me encargué del diseño del logotipo. He utilizado un fonendoscopio para sustituir la letra inicial del nombre de la compañía. El extremo del mismo viene a emular una tilde. Me ha parecido apropiado, dado que este dispositivo se utiliza para escuchar los latidos del corazón. Con ello, quería expresar protección."
+        "interfaz": [
+            "He utilizado el azul y el blanco como colores corporativos, algo muy común en páginas web del sector sanitario. Para darle un toque más fresco y moderno, he jugado con la opacidad y los gradientes. También he incluido animaciones, todo ello con el fin de mejorar la experiencia de usuario. Para mantener la coherencia con los colores corporativos y el logotipo, he utilizado imágenes en las que el azul y el blanco estuvieran presentes o en las que apareciera un fonendoscopio."
+        ],
+        "logotipo": [
+            "Se ha utilizado un fonendoscopio para sustituir la letra inicial del nombre de la compañía. El extremo del mismo viene a emular una tilde. Me ha parecido apropiado, dado que este dispositivo se utiliza para escuchar los latidos del corazón. Con ello, se pretende expresar protección."
         ],
         "herramientas": [ "Angular", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "PHP", "Git", "Font Awesome" ],
         "colores": [ "#00b4ff", "#00ebff" ],
         "link": "https://aprosan.es",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "aprosan.jpg"
     },
     "SententiApp": {
         "titulo": "SententiApp",
         "informacion": [
             "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un panel de administración que permita a los investigadores y lingüistas incorporar datos en el sistema que posteriormente sustentarán una app móvil a través de una API. El color corporativo es el dorado. Para no congestionar la interfaz, hemos hecho un gran uso del color blanco. La app móvil la puedes encontrar en este catálogo de proyectos.",
-            "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma escribiendo en un teléfono móvil, dado que se trata de una app móvil en la que se encuentran sentencias escritas por autores clásicos, que comúnmente escribían con pluma. El texto utiliza una tipografía gruesa con sefira. El teléfono móvil y el gradiente hacen de elementos modernos, mientras que la pluma y la serifa hacen de elementos con un look más antiguo. Esta combinación nos ofrece una mayor holgura a la hora de diseñar la interfaz web."
+            "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma escribiendo en un teléfono móvil, dado que se trata de una app móvil en la que se encuentran sentencias escritas por autores clásicos, que comúnmente escribían con pluma. El texto utiliza una tipografía gruesa con serifa. El teléfono móvil y el gradiente hacen de elementos modernos, mientras que la pluma y la serifa hacen de elementos con un look más antiguo. Esta combinación nos ofrece una mayor holgura a la hora de diseñar la interfaz web."
         ],
-        "herramientas": [ "Ionic", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Inkscape", "Font Awesome" ],
+        "herramientas": [ "Ionic", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Firebase", "Inkscape", "Font Awesome" ],
         "colores": [ "rgb(225,165,75)", "rgba(225,165,75,.75)" ],
         "link": "assets/sententiapp.apk",
         "tipo": "app"
@@ -37,37 +40,56 @@
     "SententiAppWeb": {
         "titulo": "SententiApp",
         "informacion": [
-            "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un panel de administración que permita a los investigadores y lingüistas incorporar datos en el sistema que posteriormente sustentarán una app móvil a través de una API. Si deseas conocer más información de la app, puedes encontrarla en este catálogo de proyectos."
+            "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un panel de administración que permita a los usuarios integrar datos en el sistema que posteriormente sustentarán una app móvil mediante una API. Puedes encontrar más información de la app móvil en este catálogo de proyectos."
         ],
-        "branding": [
-            "El color corporativo es el dorado. Para no congestionar la interfaz, hemos hecho uso del color blanco. Además de crear la página web, me encargué del diseño del logotipo. Encima del texto vemos una pluma escribiendo en un teléfono móvil. El motivo de estos dos elementos residen en que, como ya expliqué, este panel de administración proveerá de los datos necesarios a una app móvil. Dichos datos son sentencias escritas por autores clásicos, que comúnmente escribían con pluma. El texto utiliza una tipografía gruesa con sefira. El teléfono móvil y el uso de gradientes le dan un aire más moderno, mientras que la pluma y la serifa le dan un aire más atávico. Este contraste nos ofrece una mayor holgura a la hora de diseñar la interfaz web."
+        "interfaz": [
+            "El dorado y el blanco se utilizan como colores corporativos, el primero para darle un toque clásico y el segundo para paliar los efectos del dorado y evitar congestionar la interfaz. He utilizado la imagen de un texto antiguo de fondo con un overlay dorado superpuesto que se encuentra presente en todas las páginas de la aplicación web. Los elementos que componen el panel de administración tienen bastante espaciado entre sí para mejorar la comprensión visual, dado que el usuario target no se encuentra familiarizado con este tipo de herramientas digitales."
+        ],
+        "logotipo": [
+            "Encima del texto vemos una pluma escribiendo en un teléfono móvil. El motivo de estos dos elementos reside en que, como ya expliqué, este panel de administración proveerá de los datos necesarios a una app móvil. Dichos datos son sentencias escritas por autores clásicos, que comúnmente escribían con pluma.",
+            "Por otro lado, el texto utiliza una tipografía gruesa con serifa. El teléfono móvil y el uso de gradientes le dan un aire más moderno, mientras que la pluma y la serifa le dan un aire más atávico. Este contraste ofrece una mayor holgura a la hora de diseñar la interfaz web."
         ],
         "herramientas": [ ".NET", "C#", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "Microsoft Azure", "Inkscape", "Font Awesome" ],
         "colores": [ "rgb(225,165,75)", "rgba(225,165,75,.75)" ],
         "link": "https://sententiapp.iatext.ulpgc.es",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "sententiapp.jpg"
     },
     "ExcerptaAnotacion": {
         "titulo": "Proyecto Excerpta",
         "informacion": [
-            "Página web del panel de administración Proyecto Excerpta, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria. Su cometido es ofrecer un panel de administración que permita a los investigadores y lingüistas incorporar datos en el sistema que posteriormente sustentarán una aplicación web con un motor de búsqueda. El color corporativo es el azul. Dado que su uso requiere de inicio de sesión, hemos diseñado una interfaz poco ostentosa que permita trabajar cómodamente. La aplicación web homónima con el motor de búsqueda la puedes encontrar en este catálogo de proyectos.",
-            "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma atravesando una nube, dado que se almacenan extractos provenientes de textos latinos renacentistas en la nube, que comúnmente escribían con pluma. La tipografía seleccionada es Giza, que además de ser gruesa tener serifa, tiene una forma redondeada para mantener coherencia visual con la nube."
+            "Página web del panel de administración Proyecto Excerpta, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un panel de administración que permita a los usuarios integrar datos en el sistema que posteriormente sustentarán una aplicación web con un motor de búsqueda. Puedes encontrar más información de esta última en este catálogo de proyectos.",
+            "Estos datos de los que hablamos son extractos de florilegios latinos poéticos renacentistas. Un florilegio es un compendio de obras de diferentes autores. Grosso modo, podría decirse que se trata de una base de datos renacentista. Un florilegio comúnmente tiene como título el nombre del compilador, esto es, la persona que copió a mano los extractos de las obras para su agrupación."
+        ],
+        "interfaz": [
+            "El azul se utiliza como color corporativo. El diseño de la interfaz es simple y poco ostentoso, todo ello con el fin de permitir al usuario trabajar cómodamente. Los elementos que componen el panel de administración tienen bastante espaciado entre sí para mejorar la comprensión visual, dado que el usuario target no se encuentra familiarizado con este tipo de herramientas digitales."
+        ],
+        "logotipo": [
+            "Encima del texto vemos una pluma atravesando una nube. La pluma fue la herramienta de escritura de los autores clásicos y la información que se maneja se encuentra almacenada en la nube. De esta forma, reflejamos la transición entre el formato en papel y el formato digital. La tipografía seleccionada tiene serifa, lo que le confiere un toque clásico, pero omite elementos en la formación de las letras, lo que le confiere un toque moderno, haciéndola muy versátil. Además, tiene una forma redondeada para mantener coherencia visual con la nube."
         ],
         "herramientas": [ ".NET", "C#", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "Microsoft Azure", "Inkscape", "Font Awesome" ],
         "colores": [ "rgb(50,125,185)", "rgba(50,125,185,.75)"],
         "link": "https://anotaexcerpta.iatext.ulpgc.es",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "excerpta1.jpg"
     },
     "ExcerptaBusqueda": {
         "titulo": "Proyecto Excerpta",
         "informacion": [
-            "Página web del Proyecto Excerpta, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria. Su cometido es ofrecer un motor de búsqueda y herramientas de análisis e interpretación de datos a los investigadores, lingüistas y estudiantes. El color corporativo es un amarillo mostaza. Para el texto de las cabeceras hemos utilizado la misma tipografía que en el logotipo. El resto del texto utiliza una tipografía sin serifa para darle un aspecto más moderno. Los extremos de algunas secciones tienen un efecto de página rota que creé utilizando la herramienta Inskcape, para evocar un libro. Los datos que sustentan esta aplicación web se gestionan desde el panel de administración que puedes encontrar en este catálogo de proyectos.",
-            "Además de diseñar la aplicación web, diseñé también el logotipo. Encima del texto vemos una pluma atravesando una nube, dado que se almacenan extractos provenientes de textos latinos renacentistas en la nube, que comúnmente escribían con pluma. La tipografía seleccionada es Giza, que además de ser gruesa tener serifa, tiene una forma redondeada para mantener coherencia visual con la nube."
+            "Página web del Proyecto Excerpta, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Esta aplicación web ha sido utilizada como herramienta de desarrollo de proyectos de investigación de la ULPGC. Su cometido es ofrecer un motor de búsqueda y herramientas de análisis e interpretación de datos a los investigadores, filólogos y estudiantes. Dichos datos fueron subidos a la nube mediante un panel de administración que lleva el mismo nombre. Puedes encontrar más información de esta última en este catálogo de proyectos.",
+            "Estos datos de los que hablamos son extractos de florilegios latinos poéticos renacentistas. Un florilegio es un compendio de obras de diferentes autores. Grosso modo, podría decirse que se trata de una base de datos renacentista. Un florilegio comúnmente tiene como título el nombre del compilador, esto es, la persona que copió a mano los extractos de las obras para su agrupación."
+        ],
+        "interfaz": [
+            "El amarillo mostaza se utiliza como corporativo. Para el texto de las cabeceras hemos utilizado la misma tipografía que en el logotipo. El resto del texto utiliza una tipografía sin serifa para darle un aspecto más moderno. Los extremos de algunas secciones tienen un efecto de página rota para evocar un libro y evocar al usuario, de esta formar, el origen del Proyecto Excerpta."
+        ],
+        "logotipo": [
+            "Encima del texto vemos una pluma atravesando una nube. La pluma fue la herramienta de escritura de los autores clásicos y la información que se maneja se encuentra almacenada en la nube. De esta forma, reflejamos la transición entre el formato en papel y el formato digital. La tipografía seleccionada tiene serifa, lo que le confiere un toque clásico, pero omite elementos en la formación de las letras, lo que le confiere un toque moderno, haciéndola muy versátil. Además, tiene una forma redondeada para mantener coherencia visual con la nube."
         ],
         "herramientas": [ ".NET", "C#", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "Microsoft Azure", "Inkscape" ],
         "colores": [ "orange", "#ffcd32" ],
         "link": "https://excerpta.iatext.ulpgc.es",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "excerpta2.jpg"
     },
     "BubbleGlasses": {
         "titulo": "BubbleGlasses!",
