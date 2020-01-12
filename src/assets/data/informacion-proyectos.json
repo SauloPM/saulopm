@@ -121,41 +121,59 @@
     "SoledadParalegal": {
         "titulo": "Soledad Paralegal",
         "informacion": [
-            "Portfolio online de Soledad Poveda Montesdeoca, asistente legal. Es un regalo de cumpleaños que le hice a una de mis hermanas para ayudarla a conseguir trabajo. Con ello pretendo que a la hora de presentarse a una oferta de trabajo, pueda incluir un link a esta página web y diferenciarse, de este modo, del resto de posibles candidatos, al contar con una mayor presencia web. De esta manera se ofrece la información necesaria en un formato más moderno, interactivo y amigable que el formato convencional ofrecido por una hoja de papel o un fichero PDF.",
-            "Los colores corporativos son el azul oscuro y el dorado. El primero para darle un toque moderno y sobrio, mientras que el segundo para darle un toque clásico y elegante. El blanco está muy presente para ofrecer cierto alivio visual. En varias secciones aparecen imágenes sutilmente visibles relacionadas con el área del Derecho.",
-            "Además de diseñar la página web, diseñé también el logotipo. El símbolo que aparece encima del texto es una S mayúscula (la inicial del nombre de mi hermana) que se combina con una columna griega enrollándose por sus extremos a modo de pergamino. Mediante el dibujo intento darle un aspecto clásico. No obstante, utilizo una tipografía moderna con serifa para evitar que el conjunto se viera anticuado. El uso de elementos griegos en el símbolo se debe a que el Derecho Griego fue el precursor intelectual y la fuente del Derecho Romano."
+            "Portfolio online de Soledad Poveda Montesdeoca, asistente legal. Es un regalo de cumpleaños que le hice a una de mis hermanas porque me pareció una idea práctica y original. Es bien sabido que el formato de presentación ante oferta de trabajo es de vital importancia. Contar con una página web supone un factor de diferenciación que puede brindarte cierta ventaja ante otros posibles candidatos. De esta manera se ofrece la información necesaria en un formato más moderno, interactivo y amigable que el formato convencional ofrecido comúnmente en una hoja de papel o un fichero PDF."
+        ],
+        "interfaz": [
+            "El azul oscuro y el dorado se utilizan como colores corporativos. El primero para darle un toque moderno y sobrio, mientras que el segundo para darle un toque clásico y elegante. El blanco está muy presente para ofrecer cierto alivio visual. En varias secciones aparecen imágenes sutilmente visibles relacionadas con el Derecho."
+        ],
+        "logotipo": [
+            "El símbolo que aparece encima del texto es una S mayúscula (la inicial del nombre de mi hermana) que se combina con una columna griega enrollándose por sus extremos a modo de pergamino. Mediante el dibujo intento darle un aspecto clásico. No obstante, utilizo una tipografía moderna con serifa para evitar que el conjunto se viera anticuado. El uso de elementos griegos en el símbolo se debe a que el Derecho Griego fue el precursor intelectual y la fuente del Derecho Romano."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
         "colores": [ "#af32ff", "#824bff" ],
         "link": "https://saulopm.com/proyectos/soledadparalegal",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "soledadparalegal.jpg"
     },
     "EstudioJuridicoSanGregorio": {
-        "titulo": "Estudio Jurídico San Gregorio",
+        "titulo": "Estudio Jurídico SG",
         "informacion": [
-            "Página web del Estudio Jurídico San Gregorio. Además de diseñar la página web, diseñé también el logotipo. El símbolo que aparece encima del texto representa la cabeza de la diosa griega de la justicia Themis. Esta tiene una venda en los ojos y una corona de olivos. El diseño es simple, no orgánico, sin excesos en decorados ni elementos innecesarios para darle un aspecto más moderno. El uso de elementos griegos en el símbolo se debe a que el Derecho Griego fue el precursor intelectual y la fuente del Derecho Romano."
+            "Página web del Estudio Jurídico San Gregorio, despacho de abogados ubicado en pleno corazón de Telde."
+        ],
+        "logotipo": [
+            "El símbolo que aparece encima del texto representa la cabeza de la diosa griega de la justicia Themis. Esta tiene una venda en los ojos y una corona de olivos. El diseño es simple, no orgánico, sin excesos en decorados ni elementos innecesarios para darle un aspecto más moderno. El uso de elementos griegos en el símbolo se debe a que el Derecho Griego fue el precursor intelectual y la fuente del Derecho Romano."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
         "colores": [ "rgb(100,100,100)", "rgba(100,100,100,.75)" ],
         "link": "https://estudiojuridicosg.com",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "estudiojuridicosg.jpg"
     },
     "JCAbogada": {
         "titulo": "JC Abogada",
         "informacion": [
-            "Página web de JC Abogada. En ella podremos encontrar información acerca de Jessica Carmada, así como los servicios ofrecidos en su despacho. Si bien es cierto que la estétita de la web no evoca la misma seriedad que encuentras en otras páginas web de despachos de abogados, al tratarse de un blog y de un despacho unipersonal, quise darle un aspecto personal, cercano, cálido y diferente (a veces es bueno salirse de lo convencional). El color corporativo es salmón. Las fotos muestran elementos de oficina en los que el color corporativo se mantiene presente.",
-            "Al tratarse de un blog, he utilizado WordPress. Existe una separación de usuarios para evitar que el cliente pueda realizar tareas de administración que vulneren la seguridad o alteren el aspecto de la página web, dado que el cliente desea encargarse de la publicación de noticias. Como tema he utilizado Enfold, cuyo page builder es Avia, dado que he trabajado previamente con él y su page builder es de los más manejables que he probado. No obstante, este no ofrece demasiadas herramientas de maquetación, pero permite asignar clases CSS a los elementos que componen la estructura del sitio, de modo que he escrito bastante código SASS para dejar la web a mi gusto. Asimismo, los modales que aparecen al hacer clic en cualquiera de las áreas de actuación fueron implementados con JavaScript. Por seguridad, he trabajado con un tema hijo para evitar la pérdida de información tras actualizaciones y facilitar el mantenimiento.",
-            "Además de diseñar la página web, diseñé también los dos logotipos: uno más compacto y otro más grande y decorativo. Este último utiliza una tipografía principal fina que intenta emular una caligrafía. He alargado sus extremos y obviado las mayúsculas para darle un aire desenfadado y moderno. La tipografía secundaria carece de serifa y es más fina para evitar así sobrecargar el logotipo. También me encargué de la imagen corporativa en Facebook, así como del diseño de las tarjetas de contacto."
+            "Página web de JC Abogada. En ella podremos encontrar información acerca de Jessica Carmada, así como los servicios ofrecidos en su despacho. Al tratarse de un blog, he utilizado WordPress. Por seguridad, he trabajado con un tema hijo para evitar la pérdida de información tras actualizaciones y facilitar el mantenimiento. Además, existe una separación de usuarios para evitar que el cliente pueda realizar tareas de administración que vulneren la seguridad o alteren el aspecto de la página web, dado que el cliente desea encargarse de la publicación de noticias.",
+            "Como tema he utilizado Enfold, cuyo page builder es Avia, dado que he trabajado previamente con él y su page builder es de los más manejables que he probado. No obstante, este no ofrece demasiadas herramientas de maquetación, pero permite asignar clases CSS a los elementos que componen la estructura del sitio, de modo que he escrito bastante código SASS para dejar la web a mi gusto. Asimismo, los modales que aparecen al hacer clic en cualquiera de las áreas de actuación fueron implementados con JavaScript."
+        ],
+        "interfaz": [
+            "Si bien es cierto que la estétita de la web no evoca la misma seriedad que uno usualmente encuentra en otras páginas web de despachos de abogados, al tratarse de un blog y de un despacho unipersonal, quise darle un aspecto personal, cercano, cálido y diferente (a veces es bueno salirse de lo convencional). El color corporativo es salmón. Las fotos muestran elementos de oficina en los que el color corporativo se mantiene presente."
+        ],
+        "logotipo": [
+            "Este proyecto cuenta dos logotipos: uno más compacto y otro más grande y decorativo. Este último utiliza una tipografía principal fina que intenta emular una caligrafía. He alargado sus extremos y obviado las mayúsculas para darle un aire desenfadado y moderno. La tipografía secundaria carece de serifa y es más fina para evitar así la sobrecarga visual. También me encargué de la imagen corporativa en Facebook, así como del diseño de las tarjetas de contacto."
         ],
         "herramientas": [ "WordPress", "Tema Enfold", "Page Builder Avia", "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape" ],
         "colores": [ "hotpink", "#ff1496" ],
         "link": "https://jcabogada.com",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "jcabogada.jpg"
     },
     "NidoDePioPio": {
         "titulo": "Nido de Pío Pío",
         "informacion": [
-            "Página web de El Nido de Pío Pío, guardería. No se cuenta con un solo color corporativo. Se hace un uso excesivo de muchos colores y gradientes para trasmitir desorden, diversión rebeldía, evocando con ello la infancia. La tipografía utilizada emula una caligrafía infantil, pero sin sacrificar la legibilidad. El sitio cuenta con una galería de imágenes de tipo Masonry y de un carrusel para ilustrar los servicios ofrecidos. He creado diferentes bordes para separar las secciones entre sí emulando olas o dándole un efecto brush. Asimismo, las imágenes seleccionadas son muy coloridas y mezclan juguetes con naturaleza."
+            "Página web de El Nido de Pío Pío, guardería. Es un centro docente privado en el que se imparte el primer ciclo de educación infantil desde los primeros meses de vida hasta los tres años."
+        ],
+        "interfaz": [
+            "No se cuenta con un solo color corporativo: se hace un uso excesivo de muchos colores y se juega con los gradientes para trasmitir desorden, diversión rebeldía, evocando con ello la infancia. La tipografía utilizada emula una caligrafía infantil, pero sin sacrificar por ello la legibilidad. El sitio cuenta con una galería de imágenes de tipo Masonry y de un carrusel para ilustrar los servicios ofrecidos. He creado diferentes bordes para separar las secciones entre sí emulando olas o dándole un efecto brush. Asimismo, las imágenes seleccionadas son muy coloridas y en muchos casos mezclan juguetes con naturaleza."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
         "colores": [ "#00dce1", "aqua" ],
@@ -165,18 +183,24 @@
     "TerapiaEnCasa": {
         "titulo": "Terapia en Casa",
         "informacion": [
-            "Página web de Terapia en Casa, psicología online. El color corporativo es un verde apagado que, mezclado con elementos naturales, ofrecen tranquilidad y sobre todo esperanza.",
-            "Además de diseñar la página web, diseñé también el logotipo. Encima del texto vemos un boceto de un psicólogo dentro de una casa. Con ello pretendemos transmitir que puedes recibir un tratamiento psicológico desde el calor y la comodidad de tu hogar, todo ello gracias a Internet. La tipografía principal del texto emula una caligrafía en cursiva poco ostentosa, para transmitir cercanía."
+            "Página web de Terapia en Casa, psicología online. Este proyecto nace del hecho de que existan personas que no sepan dónde acudir a la hora de recibir terapia por diferentes motivos. Terapia en Casa pretende romper las barreras de la distancia y ofrecer la misma ayuda recibida en una consulta psicológica convencional, pero desde la comodidad de tu hogar."
+        ],
+        "interfaz": [
+            "El verde y el blanco se utilizan como colores corporativos. Estos colores, mezclados con imágenes de paisajes y amaneceres, ofrecen tranquilidad y sobre todo esperanza. Se hace poco uso de elementos visuales para evitar dar un aspecto demasiado corporativo, decantándonos por la palabra escrita."
+        ],
+        "logotipo": [
+            "Encima del texto vemos dos elementos componiendo el dibujo: un psicólogo y un hogar. La explicación es obvia. Por otro lado, la tipografía emula una caligrafía en cursiva poco ostentosa en lugar de una más impersonal, de esta forma se pretende transmitir cercanía y confianza."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
         "colores": [ "#afb455", "#967332" ],
         "link": "https://terapiaencasa.es",
-        "tipo": "web"
+        "tipo": "web",
+        "mockup": "terapiaencasa.jpg"
     },
     "GuiaDeAngular": {
         "titulo": "Guía de Angular",
         "informacion": [
-            "Página web con una guía elaborada por mí durante mi formación en un curso de Angular. Con ello pretendo tener a mano la descripción escrita del proceso de elaboración de diferentes operaciones utilizando este framework (manejo de formularios, login y registro, operaciones HTTP, interacción con la base de datos...), así como anotaciones sobre los recursos que este nos brinda (componentes, módulos, directivas, pipes...), todo ello de manera directa y resumida. No está terminada."
+            "Página web con anotaciones tomadas durante mi formación en un curso de Angular. Con ello pretendo tener a mano la descripción escrita del proceso de elaboración de diferentes operaciones utilizando este framework (manejo de formularios, login y registro, operaciones HTTP, interacción con la base de datos...), así como anotaciones sobre los recursos que este nos brinda (componentes, módulos, directivas, pipes...), todo ello de manera directa y resumida. No está terminada."
         ],
         "herramientas": [ "Angular", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Font Awesome" ],
         "colores": [ "rgb(50,55,70)", "rgba(50,55,70,.75)" ],
