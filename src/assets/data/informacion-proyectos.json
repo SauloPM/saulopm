@@ -29,7 +29,7 @@
     "SententiApp": {
         "titulo": "SententiApp",
         "informacion": [
-            "Página web de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un catálogo de sentencias de autores para un enfoque académico, permitiendo abrir debates para contrastar el pensamiento del antaño con el del presente ante temas de gran relevancia en la actualidad, como el feminismo, la naturaleza, etc. Los datos que sustentan esta app fueron integrados en el sistema mediante un panel de administración que lleva el mismo nombre. Puedes encontrar más información de esta última en este catálogo de proyectos."
+            "App de SententiApp, proyecto de investigación del Instituto Universitario de Análisis y Aplicaciones Textuales (IATEXT) de la Universidad de Las Palmas de Gran Canaria (ULPGC). Su cometido es ofrecer un catálogo de sentencias de autores para un enfoque académico, permitiendo abrir debates para contrastar el pensamiento del antaño con el del presente ante temas de gran relevancia en la actualidad, como el feminismo, la naturaleza, etc. Los datos que sustentan esta app fueron integrados en el sistema mediante un panel de administración que lleva el mismo nombre. Puedes encontrar más información de esta última en este catálogo de proyectos."
         ],
         "interfaz": [
             "El dorado y el blanco se utilizan como colores corporativos, el primero para darle un toque clásico y el segundo para paliar los efectos del dorado y evitar congestionar la interfaz. Dado que va dirigido a un público más joven, tiene un aspecto serio, pero moderno. Se ha hecho un mayor uso del lenguaje visual, omitiendo información innecesaria en formato de texto."
@@ -205,6 +205,28 @@
         "herramientas": [ "Angular", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Font Awesome" ],
         "colores": [ "rgb(50,55,70)", "rgba(50,55,70,.75)" ],
         "link": "https://saulopm.com/proyectos/guia-angular",
+        "tipo": "web"
+    },
+    "RocosApp": {
+        "titulo": "RocosApp",
+        "informacion": [
+            "App de RocosApp. Quise hacer esta app tras empezar con el gimnasio. Las primeras semanas estuve utilizando varias apps para gestionar mi rutina, pero encontraba frustrante tener que estar cambiando de una a otra para según qué cosa. Tampoco encontraba ninguna app en la tienda que encajase del todo con lo que yo quería. Finalmente recordé que era informático y que eso debía ser de gran ayuda también en el ámbito personal, de modo que me puse manos a la obra. Le comenté la idea a un compañero de trabajo en aquel entonces y se animó a ayudarme. Su nombre es Carlos Martel Lamas y te animo a echarle un vistazo a su perfil de LinkedIn. La app está hecha en inglés."
+        ],
+        "interfaz": [
+            "El azul y el negro se utilizan como colores corporativos. Siempre había querido diseñar una interfaz dark y con esta app tuve la oportunidad, dado que el negro suele estar presente en páginas web y apps relacionadas con el fitness. La tipografía de los encabezados es gruesa, está en cursiva y carece de serifa para otorgarle un aspecto enérgico y motivacional."
+        ],
+        "herramientas": [ "Ionic", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Firebase", "Inkscape", "Font Awesome" ],
+        "colores": [ "rgb(35,115,145)", "rgba(35,115,145,.75)" ],
+        "link": "assets/rocosapp.apk",
+        "tipo": "app"
+    },
+    "Diccionario": {
+        "titulo": "Diccionario",
+        "informacion": [
+            "Página web de Diccionario. Solía apuntar las palabras y expresiones que iba aprendiendo en Microsoft OneNote, pero quería contar con herramientas que esta aplicación no ofrecía, de modo que creé una aplicación web que lo hiciera. También la utilizo para prepararme los exámenes de inglés de la Escuela Oficial de Idiomas."
+        ],
+        "herramientas": [ "Angular", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Firebase", "Inkscape", "Font Awesome" ],
+        "colores": [ "rgb(110,010,120)", "rgb(240,000,105)" ],
         "tipo": "web"
     }
 }
