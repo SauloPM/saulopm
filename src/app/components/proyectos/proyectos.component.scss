@@ -113,6 +113,25 @@ $desktop: 1200px;
             }
         }
 
+        &.app .caption {
+
+            .titulo {
+                width: auto;
+            }
+
+            .enlaces {
+                flex-wrap: wrap;
+    
+                .enlace {
+                    margin: 0 10px 20px;
+
+                    &:last-child {
+                        margin: 0 10px 20px;
+                    }
+                }
+            }
+        }
+
         &:hover {
             transform: scale(1.01);
 
