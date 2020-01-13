@@ -203,7 +203,7 @@
             "Página web con anotaciones tomadas durante mi formación en un curso de Angular. Con ello pretendo tener a mano la descripción escrita del proceso de elaboración de diferentes operaciones utilizando este framework (manejo de formularios, login y registro, operaciones HTTP, interacción con la base de datos...), así como anotaciones sobre los recursos que este nos brinda (componentes, módulos, directivas, pipes...), todo ello de manera directa y resumida. No está terminada."
         ],
         "herramientas": [ "Angular", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Font Awesome" ],
-        "colores": [ "rgb(50,55,70)", "rgba(50,55,70,.75)" ],
+        "colores": [ "rgb(50,55,70)", "#aaafb9" ],
         "link": "https://saulopm.com/proyectos/guia-angular",
         "tipo": "web"
     },
@@ -216,7 +216,7 @@
             "El azul y el negro se utilizan como colores corporativos. Siempre había querido diseñar una interfaz dark y con esta app tuve la oportunidad, dado que el negro suele estar presente en páginas web y apps relacionadas con el fitness. La tipografía de los encabezados es gruesa, está en cursiva y carece de serifa para otorgarle un aspecto enérgico y motivacional."
         ],
         "herramientas": [ "Ionic", "Bootstrap", "HTML", "SASS", "TypeScript", "JavaScript", "jQuery", "Git", "Firebase", "Inkscape", "Font Awesome" ],
-        "colores": [ "rgb(35,115,145)", "rgba(35,115,145,.75)" ],
+        "colores": [ "rgb(050,115,225)", "rgb(010,010,015)" ],
         "link": "assets/rocosapp.apk",
         "tipo": "app"
     },
