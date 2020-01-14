@@ -1,4 +1,5 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Router    } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,19 +8,13 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class NavbarComponent {
 
-  @Output() dispararAperturaContacto    : EventEmitter<boolean>;
-  @Output() dispararAperturaConocimiento: EventEmitter<boolean>;
-
-  constructor() {
-    this.dispararAperturaContacto     = new EventEmitter();
-    this.dispararAperturaConocimiento = new EventEmitter();
-  }
+  constructor( private router: Router ) { }
 
   abrirContacto() {
-    this.dispararAperturaContacto.emit( true );
+    this.router.navigate( ['contacto'] );
   }
 
   abrirConocimiento() {
-    this.dispararAperturaConocimiento.emit( true );
+    this.router.navigate( ['conocimiento'] );
   }
 }

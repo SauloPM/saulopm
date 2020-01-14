@@ -11,19 +11,8 @@ export class AppComponent {
   
   title = 'saulopm';
 
-  mostrarContacto     = false;
-  mostrarConocimiento = false;
-
   ngAfterViewInit() {
     $.getScript('../assets/js/functions.js');
-  }
-
-  abrirContacto( estado: boolean ) {
-    this.mostrarContacto = estado;
-  }
-
-  abrirConocimiento( estado: boolean ) {
-    this.mostrarConocimiento = estado;
   }
 
 }
