@@ -1,9 +1,17 @@
+<!-- Navbar -->
+<app-navbar (dispararAperturaContacto)="abrirContacto( $event )" (dispararAperturaConocimiento)="abrirConocimiento( $event )"></app-navbar>
 
 <!-- Header -->
 <app-header></app-header>
 
 <!-- Proyectos -->
 <app-proyectos></app-proyectos>
+
+<!-- Contacto -->
+<app-contacto *ngIf="mostrarContacto" (dispararAperturaContacto)="abrirContacto( $event )"></app-contacto>
+
+<!-- Conocimientos -->
+<app-conocimiento *ngIf="mostrarConocimiento" (dispararAperturaConocimiento)="abrirConocimiento( $event )"></app-conocimiento>
 
 <!-- Descargar CV -->
 <a class="cv" href="https://saulopm.com/cv.pdf" target="_blank" title="Currículo de Saulo Poveda Montesdeoca, programador web">
