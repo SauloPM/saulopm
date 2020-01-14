@@ -17,7 +17,7 @@ export class ProyectosComponent {
     this.proyectoID = id;
   }
 
-  cerrarModal() {
+  cerrarModal( estado: boolean ) {
     this.mostrarModal = false;
   }
 
