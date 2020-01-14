@@ -2,6 +2,9 @@ import { NgModule         } from '@angular/core';
 import { BrowserModule    } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 
+// Métodos HTTP
+import { HttpClientModule } from '@angular/common/http';
+
 // Componentes
 import { AppComponent          } from './app.component';
 import { ModalComponent        } from './components/modal/modal.component';
@@ -25,7 +28,8 @@ import { InicioComponent } from './components/inicio/inicio.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

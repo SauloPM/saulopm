@@ -1,5 +1,8 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, AfterViewInit, OnInit } from '@angular/core';
+
+// Métodos HTTP
+import { HttpClient } from '@angular/common/http';
 
 // jQuery
 declare var $: any; 
@@ -9,27 +12,42 @@ declare var $: any;
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss']
 })
-export class ContactoComponent implements OnInit {
+export class ContactoComponent implements AfterViewInit, OnInit {
 
-  constructor( private router: Router ) { }
+  name    : string;
+  email   : string;
+  message : string;
+  endpoint: string;
+
+  constructor( private router: Router, private http: HttpClient ) { }
 
   ngOnInit() {
 
-    setTimeout(() => {
-      $('.cabecera').css( 'opacity', '1' );
-      $('.cierre').css( 'transform', 'scaleX(1)' );
-    }, 500);
+    // This data could really come from some inputs on the interface - but let's keep it simple
+    this.name    = "Saulo Poveda Montesdeoca";
+    this.email   = "info@saulopm.com";
+    this.message = "Hello, this is Hayden.";
 
-    setTimeout(() => {
-      $('.cierre .barra:first-child').css( 'transform', 'rotate( 45deg)' );
-      $('.cierre .barra:last-child' ).css( 'transform', 'rotate(-45deg)' );
-    }, 750);
+    // Start PHP via the built in server: $ php -S localhost:8000
+    this.endpoint = "https://saulopm.com/proyectos/email/sendemail.php";
+  }
 
-    setTimeout(() => {
-      $('.datos-contacto').css( 'opacity', '.5' );
-      $('.formulario').css( { 'opacity': '1', 'margin-top': '-135px' } );
-    }, 1000);
+  ngAfterViewInit() {
 
+      setTimeout(() => {
+        $('.cabecera').css( 'opacity', '1' );
+        $('.cierre').css( 'transform', 'scaleX(1)' );
+      }, 500);
+  
+      setTimeout(() => {
+        $('.cierre .barra:first-child').css( 'transform', 'rotate( 45deg)' );
+        $('.cierre .barra:last-child' ).css( 'transform', 'rotate(-45deg)' );
+      }, 750);
+  
+      setTimeout(() => {
+        $('.datos-contacto').css( 'opacity', '.5' );
+        $('.formulario').css( { 'opacity': '1', 'margin-top': '-135px' } );
+      }, 1000);
   }
 
   volverPaginaInicio() {
@@ -55,5 +73,22 @@ export class ContactoComponent implements OnInit {
     setTimeout(() => {
       this.router.navigate( ['inicio'] );
     }, 1500);
+  }
+
+  enviarEmail() {
+
+    alert('Hola')
+
+    let postVars = {
+      name   : this.name,
+      email  : this.email,
+      message: this.message
+    };
+
+    // You may also want to check the response. But again, let's keep it simple
+    this.http.post( this.endpoint, postVars ).subscribe(
+      response => console.log( response ),
+      response => console.log( response )
+    );
   }
 }
