@@ -1,0 +1,26 @@
+.iconos {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    right: 35px;
+
+    .icono {
+        margin-right: 20px;
+        width: 40px;
+        height: auto;
+        opacity: .25;
+        transition: .25s ease-out;
+        cursor: pointer;
+
+        &:hover {
+            color: red;
+            border-color: red;
+            opacity: 1;
+        }
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+}
