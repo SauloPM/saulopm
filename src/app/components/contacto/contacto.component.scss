@@ -15,95 +15,101 @@ $desktop: 1200px;
 
 // Placeholder
 
-::-webkit-input-placeholder { color: $placeholder; transition: .25s ease-out }
-:-ms-input-placeholder      { color: $placeholder; transition: .25s ease-out }
-::placeholder               { color: $placeholder; transition: .25s ease-out }
+::-webkit-input-placeholder { color: $placeholder; transition: .25s ease-in }
+:-ms-input-placeholder      { color: $placeholder; transition: .25s ease-in }
+::placeholder               { color: $placeholder; transition: .25s ease-in }
 
 :focus::-webkit-input-placeholder { color: transparent }
 :focus:-ms-input-placeholder      { color: transparent }
 :focus::placeholder               { color: transparent }
 
-.modal {
-    display: block;
-    opacity: 1;
+// ─────────────── //
+//     GENERAL     //
+// ─────────────── //
 
-    .modal-dialog {
-        margin: 0;
-        min-width: 100%;
+.contenedor {
+    padding: 100px 50px 50px;
+}
 
-        .modal-content {
-            border: none;
-            border-radius: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            overflow: auto;
+// Mobile First
 
-            .modal-body {
-                padding: 100px 50px 50px;
+@media only screen and (min-width: $desktop) {
 
-                .titulo {
-                    color: white;
-                    font-size: 65px;
-                    font-family: 'Selima', sans-serif;
-                    text-align: center;
-                    text-transform: lowercase;
-                    line-height: 60px;
-                    // padding: 0 15px 50px;
-                    transform: rotate(-5deg);
-                    position: absolute;
-                    top: 50%;
-                    left: 50%;
-                    z-index: 75;
-                    transform: translateY(-50%) translateX(-50%);
-                }
+    .contenedor {
+        padding: 50px;
+    }
+}
 
-                .cierre {
-                    position: absolute;
-                    top: 25px;
-                    right: 25px;
-                    z-index: 50;
-                    width: 50px;
-                    height: 50px;
-                    opacity: .35;
-                    transition: .25s ease-in;
-                    cursor: pointer;
+// ────────────── //
+//     CIERRE     //
+// ────────────── //
 
-                    &:hover {
-                        opacity: 1;
-                    }
+.cierre {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 50;
+    width: 50px;
+    height: 50px;
+    opacity: .35;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .25s ease-in;
+    cursor: pointer;
 
-                    &:before,
-                    &:after {
-                        content: '';
-                        background: black;
-                        top: 50%;
-                        left: 0;
-                        position: absolute;
-                        width: 50px;
-                        height: 1px;
-                    }
+    &:hover { opacity: 1 }
 
-                    &:before {
-                        transform: rotate(45deg);
-                    }
+    .barra {
+        background: black;
+        top: 50%;
+        left: 0;
+        position: absolute;
+        width: 50px;
+        height: 1px;
+        transition: .25s ease-in;
+    }
+}
 
-                    &:after {
-                        transform: rotate(-45deg);
-                    }
-                }
-            }
+// Mobile First
+
+@media only screen and (min-width: $desktop) {
+
+    .cierre {
+        top: 50px;
+        right: 50px;
+        width: 75px;
+        height: 75px;
+
+        .barra {
+            width: 75px;
         }
     }
+}
+
+// ────────────── //
+//     TÍTULO     //
+// ────────────── //
+
+.titulo {
+    color: white;
+    font-size: 65px;
+    font-family: 'Selima', sans-serif;
+    text-align: center;
+    text-transform: lowercase;
+    line-height: 60px;
+    transform: rotate(-5deg);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 75;
+    transform: translateY(-50%) translateX(-50%);
 }
 
 // Mobile First
 
 @media only screen and (min-width: $mobile) {
 
-    .modal .modal-dialog .modal-content .modal-body .titulo {
+    .titulo {
         font-size: 100px;
         line-height: 85px;
         // padding: 10px 25px 50px;
@@ -112,7 +118,7 @@ $desktop: 1200px;
 
 @media only screen and (min-width: $tablet) {
 
-    .modal .modal-dialog .modal-content .modal-body .titulo {
+    .titulo {
         font-size: 135px;
         line-height: 115px;
         // padding: 10px 40px 50px;
@@ -121,28 +127,16 @@ $desktop: 1200px;
 
 @media only screen and (min-width: $desktop) {
 
-    .modal .modal-dialog .modal-content .modal-body {
-        padding: 50px;
-
-        .titulo {
-            font-size: 125px;
-            line-height: 180px;
-            // padding: 0 125px 50px;
-        }
-
-        .cierre {
-            top: 50px;
-            right: 50px;
-            width: 75px;
-            height: 75px;
-
-            &:before,
-            &:after {
-                width: 75px;
-            }
-        }
+    .titulo {
+        font-size: 125px;
+        line-height: 180px;
+        // padding: 0 125px 50px;
     }
 }
+
+// ──────────────── //
+//     CABECERA     //
+// ──────────────── //
 
 .cabecera {
     background: url(./../../../assets/img/contacto.jpg) no-repeat top;
@@ -152,6 +146,8 @@ $desktop: 1200px;
     z-index: 25;
     width: 100%;
     max-width: 1000px;
+    opacity: 0;
+    transition: .5s ease-in;
 
     .brush {
         position: relative;
@@ -173,13 +169,19 @@ $desktop: 1200px;
     }
 }
 
+// ────────────────── //
+//     FORMULARIO     //
+// ────────────────── //
+
 .formulario {
     width: 550px;
     box-shadow: 0 0 5px -4px black, 0 75px 85px -75px black;
     padding: 150px 100px 100px;
-    margin: -135px auto 0;
+    margin: -150px auto 0;
     position: relative;
     z-index: 100;
+    opacity: 0;
+    transition: .5s ease-in;
 
     .entrada {
         display: block;
@@ -212,7 +214,7 @@ $desktop: 1200px;
         z-index: 125;
         opacity: .35;
         transform: rotate(-5deg);
-        transition: .25s ease-out;
+        transition: .25s ease-in;
 
         &:hover {
             opacity: 1;
@@ -230,4 +232,21 @@ $desktop: 1200px;
         bottom: 0;
         opacity: .15;
     }
+}
+
+// ───────────────────────── //
+//     DATOS DE CONTACTO     //
+// ───────────────────────── //
+
+.datos-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 75px;
+    opacity: 0;
+    transition: .5s ease-in;
 }
