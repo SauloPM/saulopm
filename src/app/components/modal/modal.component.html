@@ -1,43 +1,38 @@
 <div class="modal">
-    <div class="modal-dialog">
-        <div class="modal-content">
-
-            <!-- Contenido -->
-            <div class="modal-body">
                 
-                <!-- Botón de cierre -->
-                <div class="cierre" (click)="cerrarModal()"></div>
-
-                <!-- Título -->
-                <span class="titulo" [ngStyle]=" { 'background': 'linear-gradient( to right, ' + proyecto.colores[0] + ' , ' + proyecto.colores[1] + ')', '-webkit-background-clip': 'text', '-webkit-text-fill-color': 'transparent' }">{{ proyecto.titulo }}</span>
-
-                <span class="contenido">
-                    
-                    <!-- Información -->
-                    <div class="apartado margin-top-0">Información</div>
-                    <div class="parrafo" *ngFor="let parrafo of proyecto.informacion">{{ parrafo }}</div>
-                    
-                    <!-- Interfaz -->
-                    <ng-container *ngIf="proyecto.interfaz">
-                        <div class="apartado">Interfaz</div>
-                        <div class="parrafo" *ngFor="let parrafo of proyecto.interfaz">{{ parrafo }}</div>
-                    </ng-container>
-                    
-                    <!-- Logotipo -->
-                    <ng-container *ngIf="proyecto.logotipo">
-                        <div class="apartado">Logotipo</div>
-                        <img class="logo" [src]="'assets/img/proyectos/logos/' + proyecto.mockup" alt="" *ngIf="proyecto.mockup">
-                        <div class="parrafo" *ngFor="let parrafo of proyecto.logotipo">{{ parrafo }}</div>
-                    </ng-container>
-
-                    <!-- Herramientas -->
-                    <div class="apartado">Herramientas</div>
-                    <div class="herramientas">
-                        <span class="pildora" [ngStyle]=" { 'color': proyecto.colores[0], 'box-shadow': '0 0 5px -1px ' + proyecto.colores[0] }" *ngFor="let herramienta of proyecto.herramientas">{{ herramienta }}</span>
-                    </div>
-                    
-                </span>
-            </div>
-        </div>
+    <!-- Botón de cierre -->
+    <div class="cierre" (click)="cerrarModal()">
+        <span class="barra"></span>
+        <span class="barra"></span>
     </div>
+
+    <!-- Título -->
+    <span class="titulo" [ngStyle]=" { 'background': 'linear-gradient( to right, ' + proyecto.colores[0] + ' , ' + proyecto.colores[1] + ')' }">{{ proyecto.titulo }}</span>
+
+    <span class="contenido">
+        
+        <!-- Información -->
+        <div class="apartado margin-top-0">Información</div>
+        <div class="parrafo" *ngFor="let parrafo of proyecto.informacion">{{ parrafo }}</div>
+        
+        <!-- Interfaz -->
+        <ng-container *ngIf="proyecto.interfaz">
+            <div class="apartado">Interfaz</div>
+            <div class="parrafo" *ngFor="let parrafo of proyecto.interfaz">{{ parrafo }}</div>
+        </ng-container>
+        
+        <!-- Logotipo -->
+        <ng-container *ngIf="proyecto.logotipo">
+            <div class="apartado">Logotipo</div>
+            <img class="logo" [src]="'assets/img/proyectos/logos/' + proyecto.mockup" alt="" *ngIf="proyecto.mockup">
+            <div class="parrafo" *ngFor="let parrafo of proyecto.logotipo">{{ parrafo }}</div>
+        </ng-container>
+
+        <!-- Herramientas -->
+        <div class="apartado">Herramientas</div>
+        <div class="herramientas">
+            <span class="pildora" [ngStyle]=" { 'color': proyecto.colores[0], 'box-shadow': '0 0 5px -1px ' + proyecto.colores[0] }" *ngFor="let herramienta of proyecto.herramientas">{{ herramienta }}</span>
+        </div>
+                
+    </span>
 </div>

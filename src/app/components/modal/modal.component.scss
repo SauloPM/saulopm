@@ -13,135 +13,118 @@ $laptop :  992px;
 $desktop: 1200px;
 
 .modal {
-    display: block;
-    opacity: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    padding: 100px 50px 50px;
+    overflow: auto;
+    opacity: 0;
+    transition: .5s ease-in;
 
-    .modal-dialog {
-        margin: 0;
-        min-width: 100%;
+    .titulo {
+        font-size: 65px;
+        font-family: 'Selima', sans-serif;
+        text-align: center;
+        text-transform: lowercase;
+        line-height: 60px;
+        padding: 0 15px 50px;
+        transform: rotate(-5deg);
+        opacity: 0;
+        transition: .25s ease-in;
+    }
 
-        .modal-content {
-            border: none;
-            border-radius: 0;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            overflow: auto;
+    .contenido {
+        width: 100%;
+        max-width: 500px;
+        opacity: 0;
+        transition: .25s ease-in;
 
-            .modal-body {
+        .apartado {
+            font-size: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            border-bottom: 1px solid rgba(0,0,0,.25);
+            letter-spacing: 5px;
+            line-height: 15px;
+            padding: 0 15px 10px;
+            margin: 30px 0 50px;
+        }
+
+        .parrafo {
+            font-size: 13px;
+            text-align: justify;
+            text-align-last: center;
+            line-height: 30px;
+            margin-bottom: 25px;
+        }
+
+        .enlace {
+            font-size: 13px;
+            text-decoration: none;
+            transition: .25s ease-out;
+
+            &:hover {
+                opacity: .75;
+            }
+        }
+
+        .logo {
+            margin-bottom: 45px;
+            width: 100%;
+            height: auto;
+        }
+
+        .herramientas {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .pildora {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                flex-direction: column;
-                padding: 100px 50px 50px;
-
-                .titulo {
-                    font-size: 65px;
-                    font-family: 'Selima', sans-serif;
-                    text-align: center;
-                    text-transform: lowercase;
-                    line-height: 60px;
-                    padding: 0 15px 50px;
-                    transform: rotate(-5deg);
-                }
-
-                .contenido {
-                    width: 100%;
-                    max-width: 500px;
-
-                    .apartado {
-                        font-size: 10px;
-                        text-align: center;
-                        text-transform: uppercase;
-                        border-bottom: 1px solid rgba(0,0,0,.25);
-                        letter-spacing: 5px;
-                        line-height: 15px;
-                        padding: 0 15px 10px;
-                        margin: 30px 0 50px;
-                    }
-
-                    .parrafo {
-                        font-size: 13px;
-                        text-align: justify;
-                        text-align-last: center;
-                        line-height: 30px;
-                        margin-bottom: 25px;
-                    }
-
-                    .enlace {
-                        font-size: 13px;
-                        text-decoration: none;
-                        transition: .25s ease-out;
-
-                        &:hover {
-                            opacity: .75;
-                        }
-                    }
-
-                    .logo {
-                        margin-bottom: 45px;
-                        width: 100%;
-                        height: auto;
-                    }
-
-                    .herramientas {
-                        display: flex;
-                        flex-wrap: wrap;
-                        justify-content: center;
-
-                        .pildora {
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
-                            color: $primary;
-                            font-size: 12px;
-                            font-weight: 700;
-                            border-radius: 25px;
-                            margin: 0 5px 10px;
-                            padding: 5px 20px;
-                            width: fit-content;
-                        }
-                    }
-                }
-
-                .cierre {
-                    position: absolute;
-                    top: 25px;
-                    right: 25px;
-                    z-index: 50;
-                    width: 50px;
-                    height: 50px;
-                    opacity: .35;
-                    transition: .25s ease-in;
-                    cursor: pointer;
-
-                    &:hover {
-                        opacity: 1;
-                    }
-
-                    &:before,
-                    &:after {
-                        content: '';
-                        background: black;
-                        top: 50%;
-                        left: 0;
-                        position: absolute;
-                        width: 50px;
-                        height: 1px;
-                    }
-
-                    &:before {
-                        transform: rotate(45deg);
-                    }
-
-                    &:after {
-                        transform: rotate(-45deg);
-                    }
-                }
+                color: $primary;
+                font-size: 12px;
+                font-weight: 700;
+                border-radius: 25px;
+                margin: 0 5px 10px;
+                padding: 5px 20px;
+                width: fit-content;
             }
         }
+    }
+
+    .cierre {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        z-index: 50;
+        width: 50px;
+        height: 50px;
+        opacity: .35;
+        transition: .25s ease-in;
+        transform: scaleX(0);
+        transform-origin: center;
+        cursor: pointer;
+
+        .barra {
+            background: black;
+            top: 50%;
+            left: 0;
+            position: absolute;
+            width: 50px;
+            height: 1px;
+            transition: .25s ease-in;
+        }
+
+        &:hover { opacity: 1 }
     }
 }
 
@@ -149,7 +132,7 @@ $desktop: 1200px;
 
 @media only screen and (min-width: $mobile) {
 
-    .modal .modal-dialog .modal-content .modal-body .titulo {
+    .modal .titulo {
         font-size: 100px;
         line-height: 85px;
         padding: 10px 25px 50px;
@@ -158,7 +141,7 @@ $desktop: 1200px;
 
 @media only screen and (min-width: $tablet) {
 
-    .modal .modal-dialog .modal-content .modal-body .titulo {
+    .modal .titulo {
         font-size: 135px;
         line-height: 115px;
         padding: 10px 40px 50px;
@@ -167,8 +150,8 @@ $desktop: 1200px;
 
 @media only screen and (min-width: $desktop) {
 
-    .modal .modal-dialog .modal-content .modal-body {
-        padding: 50px;
+    .modal {
+        padding: 150px 50px 50px;
 
         .titulo {
             font-size: 175px;
@@ -186,8 +169,7 @@ $desktop: 1200px;
             width: 75px;
             height: 75px;
 
-            &:before,
-            &:after {
+            .barra {
                 width: 75px;
             }
         }

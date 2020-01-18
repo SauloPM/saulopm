@@ -1,5 +1,8 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+
+// Componentes hijos
+import { ModalComponent } from '../modal/modal.component';
 
 // jQuery
 declare var $: any;
@@ -11,7 +14,10 @@ declare var $: any;
 })
 export class InicioComponent implements OnInit {
 
+  @ViewChild( ModalComponent, { static: true } ) modal: ModalComponent;
+
   showSpinner = true;
+  proyectoID : string;
 
   constructor( private router: Router ) {
     this.showSpinner = this.router.getCurrentNavigation().extras.state ? false : true;
@@ -24,6 +30,10 @@ export class InicioComponent implements OnInit {
       this.smoothTransition();
     }
   }
+
+  // ────────────── //
+  //     NAVBAR     //
+  // ────────────── //
 
   abrirContacto() {
 
@@ -45,6 +55,14 @@ export class InicioComponent implements OnInit {
 
   }
 
+  // ─────────────── //
+  //     MODALES     //
+  // ─────────────── //
+
+  abrirModal( proyectoID ) {
+    this.modal.abrirModal( proyectoID );
+  }
+
   // ──────────────── //
   //     AUXILIAR     //
   // ──────────────── //
@@ -63,8 +81,7 @@ export class InicioComponent implements OnInit {
     $( '.smooth-transition' ).css({ 'z-index': '100', 'opacity': '1' });
 
     setTimeout(() => {
-      $( '.smooth-transition' ).css({ 'z-index': '', 'opacity': '' });
+      $( '.smooth-transition' ).css({ 'z-index': '-1', 'opacity': '0' });
     }, 500);
   }
-
 }
