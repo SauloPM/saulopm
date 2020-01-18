@@ -51,8 +51,6 @@ $desktop: 1200px;
     transition: .25s ease-in;
     cursor: pointer;
 
-    &:hover { opacity: 1 }
-
     .barra {
         background: black;
         top: 50%;
@@ -62,6 +60,8 @@ $desktop: 1200px;
         height: 1px;
         transition: .25s ease-in;
     }
+
+    &:hover { opacity: 1 }
 }
 
 // Mobile First
