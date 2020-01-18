@@ -8,12 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 // Componentes
 import { AppComponent          } from './app.component';
 import { ModalComponent        } from './components/modal/modal.component';
+import { FooterComponent       } from './components/footer/footer.component';
 import { HeaderComponent       } from './components/header/header.component';
+import { InicioComponent       } from './components/inicio/inicio.component';
 import { NavbarComponent       } from './components/navbar/navbar.component';
 import { ContactoComponent     } from './components/contacto/contacto.component';
 import { ProyectosComponent    } from './components/proyectos/proyectos.component';
 import { ConocimientoComponent } from './components/conocimiento/conocimiento.component';
-import { InicioComponent } from './components/inicio/inicio.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { InicioComponent } from './components/inicio/inicio.component';
     ContactoComponent,
     ConocimientoComponent,
     InicioComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
