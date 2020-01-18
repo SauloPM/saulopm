@@ -1,22 +1,29 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-// jQuery
-declare var $: any;
+// Clases
+import { Proyecto } from 'src/app/clases/proyecto.js';
 
 // Assets
 import * as proyectos from '../../../assets/data/informacion-proyectos.json';
+
+// jQuery
+declare var $: any;
 
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.scss']
 })
-export class ModalComponent {
+export class ModalComponent implements OnInit {
 
-  proyecto: any = {};
+  proyecto: Proyecto;
   textoBoton = 'Visitar';
 
   constructor() { }
+
+  ngOnInit() {
+    this.proyecto = new Proyecto();
+  }
 
   abrirModal( proyectoID: string ) {
 
