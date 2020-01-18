@@ -1,5 +1,5 @@
-import { Router    } from '@angular/router';
-import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -8,13 +8,19 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
-  constructor( private router: Router ) { }
+  @Output() onAbrirContacto    : EventEmitter<any>;
+  @Output() onAbrirConocimiento: EventEmitter<any>;
+
+  constructor( private router: Router ) {
+    this.onAbrirContacto     = new EventEmitter();
+    this.onAbrirConocimiento = new EventEmitter();
+  }
 
   abrirContacto() {
-    this.router.navigate( ['contacto'] );
+    this.onAbrirContacto.emit();
   }
 
   abrirConocimiento() {
-    this.router.navigate( ['conocimiento'] );
+    this.onAbrirConocimiento.emit();
   }
 }

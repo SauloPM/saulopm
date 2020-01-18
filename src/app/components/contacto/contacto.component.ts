@@ -71,8 +71,9 @@ export class ContactoComponent implements AfterViewInit, OnInit {
     }, 500);
 
     setTimeout(() => {
-      this.router.navigate( ['inicio'] );
+      this.router.navigateByUrl( 'inicio', { state: { showSpinner: false }});
     }, 1500);
+
   }
 
   enviarEmail() {
