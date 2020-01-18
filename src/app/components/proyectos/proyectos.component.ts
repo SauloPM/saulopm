@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-proyectos',
@@ -7,18 +7,13 @@ import { Component } from '@angular/core';
 })
 export class ProyectosComponent {
 
-  proyectoID: string;
-  mostrarModal = false;
+  @Output() onAbrirModal: EventEmitter<string>
 
-  constructor() { }
+  constructor() {
+    this.onAbrirModal = new EventEmitter();
+  }
 
   abrirModal( id: string ) {
-    this.mostrarModal = true;
-    this.proyectoID = id;
+    this.onAbrirModal.emit( id );
   }
-
-  cerrarModal( estado: boolean ) {
-    this.mostrarModal = false;
-  }
-
 }
