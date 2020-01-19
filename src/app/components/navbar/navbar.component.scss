@@ -9,8 +9,8 @@ $desktop: 1200px;
     display: flex;
     align-items: center;
     position: absolute;
-    top: 35px;
-    left: 35px;
+    top: 15px;
+    left: 15px;
 
     .icono {
         margin-right: 20px;
@@ -31,6 +31,14 @@ $desktop: 1200px;
 }
 
 // Mobile First
+
+@media only screen and (min-width: $mobile) {
+
+    .iconos {
+        top: 35px;
+        left: 35px;
+    }
+}
 
 @media only screen and (min-width: $tablet) {
 

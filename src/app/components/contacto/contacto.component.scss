@@ -4,7 +4,7 @@ $text        : black;
 $primary     : rgb(255,000,035);
 $darkprimary : rgb(165,000,025);
 $white       : rgba(255,255,255,.5);
-$placeholder : rgba(000,000,000,.25);
+$placeholder : rgba(000,000,000,.3);
 
 // Responsive Breakpoints
 
@@ -40,11 +40,11 @@ $desktop: 1200px;
 
 .cierre {
     position: absolute;
-    top: 25px;
-    right: 25px;
+    top: 15px;
+    right: 15px;
     z-index: 50;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     opacity: .35;
     transform: scaleX(0);
     transform-origin: center;
@@ -56,7 +56,7 @@ $desktop: 1200px;
         top: 50%;
         left: 0;
         position: absolute;
-        width: 50px;
+        width: 35px;
         height: 1px;
         transition: .25s ease-in;
     }
@@ -65,6 +65,20 @@ $desktop: 1200px;
 }
 
 // Mobile First
+
+@media only screen and (min-width: $mobile) {
+
+    .cierre {
+        top: 25px;
+        right: 25px;
+        width: 50px;
+        height: 50px;
+
+        .barra {
+            width: 50px;
+        }
+    }
+}
 
 @media only screen and (min-width: $desktop) {
 
@@ -86,7 +100,7 @@ $desktop: 1200px;
 
 .titulo {
     color: white;
-    font-size: 58px;
+    font-size: 75px;
     font-family: 'Selima', sans-serif;
     text-align: center;
     text-transform: lowercase;
@@ -102,13 +116,6 @@ $desktop: 1200px;
 // Mobile First
 
 @media only screen and (min-width: $mobile) {
-
-    .titulo {
-        font-size: 75px;
-    }
-}
-
-@media only screen and (min-width: $tablet) {
 
     .titulo {
         font-size: 100px;
@@ -133,7 +140,7 @@ $desktop: 1200px;
     margin: 0 auto;
     position: relative;
     z-index: 25;
-    width: 300px;
+    width: 100%;
     max-width: 1000px;
     opacity: 0;
     transition: .5s ease-in;
@@ -164,7 +171,7 @@ $desktop: 1200px;
 @media only screen and (min-width: $mobile) {
 
     .cabecera {
-        width: 500px;
+        width: 575px;
     }
 }
 
@@ -188,13 +195,11 @@ $desktop: 1200px;
 // ────────────────── //
 
 .formulario {
-    border-radius: 2px;
-    box-shadow: 0 0 5px -4px black, 0 75px 85px -75px black;
-    padding: 45px 35px 35px;
-    margin-top: -20px;
+    box-shadow: 0 25px 15px -30px black;
+    padding: 25px 0 35px;
     position: relative;
     z-index: 100;
-    width: 235px;
+    width: 100%;
     opacity: 0;
     transition: .5s ease-in;
 
@@ -202,18 +207,18 @@ $desktop: 1200px;
         display: block;
         color: black;
         font-size: 12px;
-        text-align: center;
         background: none;
         border: none;
-        border-radius: 2px;
-        border-bottom: 1px solid rgba(0,0,0,.1);
+        border-bottom: 1px solid rgba(0,0,0,.15);
         outline: none;
-        padding: 8px 25px;
+        padding: 10px 20px;
         margin: 0 auto 15px;
         position: relative;
         z-index: 125;
         width: 100%;
-        max-width: 275px;
+        max-width: 250px;
+        resize: none;
+        transition: .25s ease-in;
     }
 
     .boton {
@@ -255,19 +260,20 @@ $desktop: 1200px;
 @media only screen and (min-width: $mobile) {
 
     .formulario {
-        padding: 45px 35px;
-        margin-top: -45px;
+        border-radius: 2px;
+        box-shadow: 0 0 5px -4px black, 0 75px 85px -75px black;
+        padding: 75px 35px 45px;
+        margin-top: -75px;
         width: 400px;
 
         .entrada {
-            font-size: 15px;
+            font-size: 14px;
             padding: 10px 25px;
             margin: 0 auto 25px;
         }
 
         .boton {
-            font-size: 75px;
-            margin: 65px auto 0;
+            font-size: 60px;
         }
     }
 }
@@ -275,9 +281,18 @@ $desktop: 1200px;
 @media only screen and (min-width: $tablet) {
 
     .formulario {
-        padding: 90px 0 100px;
-        margin-top: -75px;
+        padding: 90px 0 65px;
+        margin-top: -90px;
         width: 425px;
+
+        .entrada {
+            max-width: 225px;
+        }
+
+        .boton {
+            font-size: 75px;
+            margin-top: 35px;
+        }
     }
 }
 
@@ -285,8 +300,16 @@ $desktop: 1200px;
 
     .formulario {
         padding: 125px 0 100px;
-        margin-top: -120px;
+        margin-top: -135px;
         width: 550px;
+
+        .entrada {
+            max-width: 250px;
+        }
+
+        .boton {
+            margin-top: 65px;
+        }
     }
 }
 
@@ -300,9 +323,19 @@ $desktop: 1200px;
     justify-content: center;
     flex-direction: column;
     color: black;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
-    margin-top: 75px;
+    margin-top: 50px;
     opacity: 0;
     transition: .5s ease-in;
+}
+
+// Mobile First
+
+@media only screen and (min-width: $mobile) {
+
+    .datos-contacto {
+        font-size: 15px;
+        margin-top: 75px;
+    }
 }
