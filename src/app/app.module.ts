@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 // Métodos HTTP
 import { HttpClientModule } from '@angular/common/http';
 
+// Formularios
+import { FormsModule } from '@angular/forms';
+
 // Componentes
 import { AppComponent          } from './app.component';
 import { ModalComponent        } from './components/modal/modal.component';
@@ -29,6 +32,7 @@ import { ConocimientoComponent } from './components/conocimiento/conocimiento.co
     FooterComponent,
   ],
   imports: [
+    FormsModule,
     BrowserModule,
     AppRoutingModule,
     HttpClientModule

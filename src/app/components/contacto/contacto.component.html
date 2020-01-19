@@ -10,11 +10,12 @@
         <div class="titulo">Contacto</div>
     </div>
 
-    <form class="formulario">
-        <input class="entrada" type="text" placeholder="Nombre">
-        <input class="entrada" type="text" placeholder="Asunto">
-        <input class="entrada" type="text" placeholder="Mensaje">
-        <button class="boton" (click)="enviarEmail()">Enviar</button>
+    <form class="formulario" #miFormulario="ngForm" (ngSubmit)="enviarEmail( miFormulario )">
+        <input    class="entrada" type="text" [(ngModel)]="nombre"  placeholder="Nombre"  name="nombre"  required autocomplete="off">
+        <input    class="entrada" type="text" [(ngModel)]="email"   placeholder="Email"   name="email"   required autocomplete="off">
+        <input    class="entrada" type="text" [(ngModel)]="asunto"  placeholder="Asunto"  name="asunto"  required autocomplete="off">
+        <textarea class="entrada" rows="3"    [(ngModel)]="mensaje" placeholder="Mensaje" name="mensaje"  required autocomplete="off"></textarea>
+        <button   class="boton"   type="submit">Enviar</button>
     </form>
 
     <div class="datos-contacto">

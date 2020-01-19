@@ -1,5 +1,8 @@
 import { Router } from '@angular/router';
-import { Component, AfterViewInit, OnInit } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+
+// Manejo de formularios
+import { NgForm } from '@angular/forms';
 
 // Métodos HTTP
 import { HttpClient } from '@angular/common/http';
@@ -12,29 +15,49 @@ declare var $: any;
   templateUrl: './contacto.component.html',
   styleUrls: ['./contacto.component.scss']
 })
-export class ContactoComponent implements AfterViewInit, OnInit {
+export class ContactoComponent implements AfterViewInit {
 
-  name    : string;
+  nombre  : string;
   email   : string;
-  message : string;
-  endpoint: string;
+  asunto  : string;
+  mensaje : string;
+  endpoint: string = 'https://saulopm.com/proyectos/enviaremail.php';
 
   constructor( private router: Router, private http: HttpClient ) { }
 
-  ngOnInit() {
-
-    // This data could really come from some inputs on the interface - but let's keep it simple
-    this.name    = 'Saulo Poveda Montesdeoca';
-    this.email   = 'info@saulopm.com';
-    this.message = 'Hello, this is Hayden.';
-
-    // Start PHP via the built in server: $ php -S localhost:8000
-    this.endpoint = 'https://saulopm.com/proyectos/email/sendemail.php';
+  ngAfterViewInit() {
+    this.mostrarPagina();
   }
 
-  ngAfterViewInit() {
+  volverPaginaInicio() {
+    this.ocultarPagina();
+  }
 
-    const marginTop = parseInt( $( '.formulario' ).css( 'marginTop' ));
+  enviarEmail( formulario: NgForm ) {
+
+    if ( this.existenCamposVacios() ) {
+      return;
+    }
+
+    const parametros = {
+      nombre : this.nombre,
+      email  : this.email,
+      asunto : this.asunto,
+      mensaje: this.mensaje
+    };
+
+    // Enviamos el emial con todos los datos
+    this.http.post( this.endpoint, parametros ).subscribe();
+
+    // Volvemos a la página de inicio
+    this.router.navigateByUrl( 'inicio', { state: { showSpinner: false }});
+  }
+
+  // ──────────────── //
+  //     AUXILIAR     //
+  // ──────────────── //
+
+  private mostrarPagina() {
 
     setTimeout(() => {
       $('.cabecera').css( 'opacity', '1' );
@@ -48,20 +71,18 @@ export class ContactoComponent implements AfterViewInit, OnInit {
 
     setTimeout(() => {
       $('.datos-contacto').css( 'opacity', '.5' );
-      $('.formulario').css( { 'opacity': '1', 'margin-top': marginTop - 15 } );
+      $('.formulario').css( 'opacity', '1' );
     }, 1000);
   }
 
-  volverPaginaInicio() {
-
-    const marginTop = parseInt( $( '.formulario' ).css( 'marginTop' ));
+  private ocultarPagina() {
 
     // Cierre
     $('.cierre .barra:first-child').css( 'transform', 'rotate(0)' );
     $('.cierre .barra:last-child' ).css( 'transform', 'rotate(0)' );
 
     // Formulario
-    $('.formulario').css( { 'opacity': '0', 'margin-top': marginTop + 15 } );
+    $('.formulario').css( 'opacity', '0' );
 
     // Datos de contacto
     $('.datos-contacto').css( 'opacity', '0' );
@@ -77,21 +98,32 @@ export class ContactoComponent implements AfterViewInit, OnInit {
     setTimeout(() => {
       this.router.navigateByUrl( 'inicio', { state: { showSpinner: false }});
     }, 1500);
-
   }
 
-  enviarEmail() {
+  private existenCamposVacios() {
 
-    const parametros = {
-      name   : this.name,
-      email  : this.email,
-      message: this.message
-    };
+    if ( $('.entrada[name="nombre"]').val().trim() === '' ) {
+      this.resaltarCampo( '.entrada[name="nombre"]' );
+      return true;
+    }
 
-    // You may also want to check the response. But again, let's keep it simple
-    this.http.post( this.endpoint, parametros ).subscribe(
-      response => console.log( response ),
-      response => console.log( response )
-    );
+    if ( $('.entrada[name="asunto"]').val().trim() === '' ) {
+      this.resaltarCampo( '.entrada[name="asunto"]' );
+      return true;
+    }
+
+    if ( $('.entrada[name="mensaje"]').val().trim() === '' ) {
+      this.resaltarCampo( '.entrada[name="mensaje"]' );
+      return true;
+    }
+  }
+
+  private resaltarCampo( selectorCSS: string ) {
+
+    $( selectorCSS ).css( 'border-color', 'red' );
+
+    setTimeout(() => {
+      $( selectorCSS ).css( 'border-color', '' );
+    }, 500);
   }
 }
