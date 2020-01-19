@@ -47,27 +47,27 @@ export class ModalComponent implements OnInit {
     $( '.modal' ).css({ 'z-index': '100', 'opacity': '1' });
 
     setTimeout(() => {
-      $( '.titulo' ).css({ 'opacity': '1', '-webkit-background-clip': 'text', '-webkit-text-fill-color': 'transparent' });
-      $('.cierre').css( 'transform', 'scaleX(1)' );
+      $( '.modal .titulo' ).css({ 'opacity': '1', '-webkit-background-clip': 'text', '-webkit-text-fill-color': 'transparent' });
+      $( '.modal .cierre' ).css( 'transform', 'scaleX(1)' );
     }, 500);
 
     setTimeout(() => {
       $( '.contenido' ).css( 'opacity', '1' );
-      $('.cierre .barra:first-child').css( 'transform', 'rotate( 45deg)' );
-      $('.cierre .barra:last-child' ).css( 'transform', 'rotate(-45deg)' );
+      $( '.modal .cierre .barra:first-child' ).css( 'transform', 'rotate( 45deg)' );
+      $( '.modal .cierre .barra:last-child'  ).css( 'transform', 'rotate(-45deg)' );
     }, 750);
   }
 
   private ocultarModal() {
 
-    $( '.contenido' ).css( 'opacity', '' );
+    $( '.modal .contenido' ).css( 'opacity', '' );
 
-    $('.cierre .barra:first-child').css( 'transform', '' );
-    $('.cierre .barra:last-child' ).css( 'transform', '' );
+    $( '.modal .cierre .barra:first-child').css( 'transform', '' );
+    $( '.modal .cierre .barra:last-child' ).css( 'transform', '' );
     
     setTimeout(() => {
-      $( '.titulo' ).css( 'opacity', '' );
-      $('.cierre').css( 'transform', '' );
+      $( '.modal .titulo' ).css( 'opacity', '' );
+      $( '.modal .cierre' ).css( 'transform', '' );
     }, 250);
     
     setTimeout(() => {
