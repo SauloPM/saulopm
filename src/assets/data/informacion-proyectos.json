@@ -140,11 +140,14 @@
         "informacion": [
             "Página web del Estudio Jurídico San Gregorio, despacho de abogados ubicado en pleno corazón de Telde."
         ],
+        "interfaz": [
+            "El marrón se utilizan como colores corporativos. Es algo que se sale de lo convencional, dado que el dorado, el rojo y el azul suelen ser los protagonistas en las páginas web de derecho. La interfaz es minimalista y se apoya de gradientes y sombras, estas últimas para ofrecer separación entre los distintos elementos. La portada y el pie de página se separan del resto de las secciones mediante un trayecto en diagonal para darle un toque más moderno y desenfadado. La portada se compone únicamente del logotipo."
+        ],
         "logotipo": [
             "El símbolo que aparece encima del texto representa la cabeza de la diosa griega de la justicia Themis. Esta tiene una venda en los ojos y una corona de olivos. El diseño es simple, no orgánico, sin excesos en decorados ni elementos innecesarios para darle un aspecto más moderno. El uso de elementos griegos en el símbolo se debe a que el Derecho Griego fue el precursor intelectual y la fuente del Derecho Romano."
         ],
         "herramientas": [ "Bootstrap", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "rgb(100,100,100)", "rgba(100,100,100,.75)" ],
+        "colores": [ "rgb(175,150,140)", "rgba(175,150,140,.3)" ],
         "link": "https://estudiojuridicosg.com",
         "tipo": "web",
         "mockup": "estudiojuridicosg.jpg"

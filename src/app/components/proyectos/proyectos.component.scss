@@ -302,7 +302,7 @@ $desktop: 1200px;
 .bg-excerpta1         { background: rgb(050,125,185) }
 .bg-patriciacv        { background: rgb(075,190,225) }
 .bg-guiaangular       { background: rgb(050,055,070) }
-.bg-estudiojuridicosg { background: rgb(100,100,100) }
+.bg-estudiojuridicosg { background: rgb(175,150,140) }
 
 // Fondos con gradientes lineales
 
@@ -341,9 +341,9 @@ $desktop: 1200px;
     background-image: url('./../../../assets/img/proyectos/fondos/bg4.svg');
 }
 
-.bg-estudiojuridicosg::before {
-    background-image: url('./../../../assets/img/proyectos/fondos/estudiojuridicosg.jpg');
-}
+// .bg-estudiojuridicosg::before {
+//     background-image: url('./../../../assets/img/proyectos/fondos/estudiojuridicosg.jpg');
+// }
 
 .bg-rocosapp::before {
     background-image: url('./../../../assets/img/proyectos/fondos/noise.png');
