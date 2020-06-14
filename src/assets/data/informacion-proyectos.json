@@ -196,7 +196,7 @@
             "Encima del texto vemos dos elementos componiendo el dibujo: un psicólogo y un hogar. La explicación es obvia. Por otro lado, la tipografía emula una caligrafía en cursiva poco ostentosa en lugar de una más impersonal, de esta forma se pretende transmitir cercanía y confianza."
         ],
         "herramientas": [ "WordPress", "Custom Post Types", "Contact Form", "HTML", "SASS", "JavaScript", "jQuery", "PHP", "Git", "Inkscape", "Font Awesome" ],
-        "colores": [ "#af9b46", "#c9965f" ],
+        "colores": [ "#af9b46", "#c8965f" ],
         "link": "https://terapiaencasa.es/blog",
         "tipo": "web",
         "mockup": "terapiaencasa.jpg"
