@@ -170,6 +170,19 @@
         "tipo": "web",
         "mockup": "jcabogada.jpg"
     },
+    "Aprocodi": {
+        "titulo": "Aprocodi",
+        "informacion": [
+            "Página web de Aprocodi, asesoría online para creadores de contenidos digitales. Entre sus servicios se encuentran la contabilidad de facturas, la presentación de modelos a Hacienda y a la Seguridad Social, la declaración de la renta y asesoramiento personalizado. En un tiempo en el que la digitalización se impone a pasos agigantados en nuestra vida cotidiana, una asesoría online se presenta como un candidato sólido ante las convencionales. Una de sus grandes ventajas es que ofrece precios más competitivos, entre otras."
+        ],
+        "interfaz": [
+            "He utilizado el gris y el magenta como colores corporativos, cuya combinación le confiere un toque moderno. La interfaces oscuras son un clásico en el mundo de los gamers, uno de los principales targets de esta asesoría. Con el fin de mejorar la experiencia de usuario y darle una apariencia más juvenil, he utilizado varios plugins de JavaScript para trabajar con animaciones más sofisticadas que consiguen un resultado mucho más vistoso."
+        ],
+        "herramientas": [ "HTML", "SASS", "Flexbox", "JavaScript", "jQuery", "PHP", "Git", "particles.js", "vanilla-tilt.js" ],
+        "colores": [ "rgb(200,0,75)", "rgba(200,0,75,.5)" ],
+        "link": "https://saulopm.com/proyectos/aprocodi",
+        "tipo": "web"
+    },
     "NidoDePioPio": {
         "titulo": "Nido de Pío Pío",
         "informacion": [
