@@ -178,7 +178,7 @@
         "interfaz": [
             "He utilizado el gris y el magenta como colores corporativos, cuya combinación le confiere un toque moderno. La interfaces oscuras son un clásico en el mundo de los gamers, uno de los principales targets de esta asesoría. Con el fin de mejorar la experiencia de usuario y darle una apariencia más juvenil, he utilizado varios plugins de JavaScript para trabajar con animaciones más sofisticadas que consiguen un resultado mucho más vistoso."
         ],
-        "herramientas": [ "HTML", "SASS", "Flexbox", "JavaScript", "jQuery", "PHP", "Git", "particles.js", "vanilla-tilt.js" ],
+        "herramientas": [ "HTML", "SASS", "Flexbox", "JavaScript", "jQuery", "PHP", "Git", "particles.js", "vanilla-tilt.js", "Font Awesome" ],
         "colores": [ "rgb(200,0,75)", "rgba(200,0,75,.5)" ],
         "link": "https://saulopm.com/proyectos/aprocodi",
         "tipo": "web"
