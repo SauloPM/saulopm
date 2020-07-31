@@ -21,9 +21,9 @@ $desktop: 1400px;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
         text-transform: uppercase;
-        letter-spacing: 5px;
+        letter-spacing: 3px;
         white-space: nowrap;
-        margin: 15px 0 0;
+        margin: 10px 0 0;
     }
 
     h2 {
@@ -34,7 +34,6 @@ $desktop: 1400px;
         text-align: center;
         text-transform: lowercase;
         margin: 0 auto;
-        transform: rotate(-12deg);
     }
 }
 
@@ -42,8 +41,17 @@ $desktop: 1400px;
 
 @media only screen and (min-width: $mobile) {
 
-    #header h2 {
-        font-size: 100px;
+    #header {
+
+        h1 {
+            letter-spacing: 5px;
+            margin: 15px 0 0;
+        }
+
+        h2 {
+            font-size: 100px;
+            transform: rotate(-12deg);
+        }
     }
 }
 
