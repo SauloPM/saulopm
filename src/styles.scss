@@ -24,8 +24,8 @@ $desktop: 1400px;
 
 // Text Selection
 
-::-moz-selection { color: $white; background: $primary }
-::selection      { color: $white; background: $primary }
+::-moz-selection { color: $white; background: transparentize( $primary, .01 ) }
+::selection      { color: $white; background: transparentize( $primary, .01 ) }
 
 // ––––––––––––––– //
 //     GENERAL     //
