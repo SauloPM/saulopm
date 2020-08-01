@@ -50,7 +50,7 @@ export class ContactoComponent implements AfterViewInit {
     this.http.post( this.endpoint, parametros ).subscribe();
 
     // Volvemos a la página de inicio
-    this.router.navigateByUrl( 'inicio', { state: { showSpinner: false }});
+    // this.router.navigateByUrl( 'inicio', { state: { showSpinner: false }});
   }
 
   // ──────────────── //

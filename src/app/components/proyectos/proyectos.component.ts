@@ -17,7 +17,7 @@ export class ProyectosComponent implements OnInit {
 
   ngOnInit() {
 
-    VanillaTilt.init( document.querySelectorAll( '.proyecto'), { max: 8, speed: 1000 });
+    VanillaTilt.init( document.querySelectorAll( '.proyecto' ), { max: 5, speed: 2000 });
     
   }
 
