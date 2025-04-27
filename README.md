@@ -10,8 +10,7 @@ A la hora de empezar nuevos proyectos, disfruto mucho poniéndole esmero en:
 
 Si quieres saber más sobre mí, te invito a visitar mi [perfil de LinkedIn](https://es.linkedin.com/in/saulopm). 🚀
 
-### 🔥 Tecnologías con las que he trabajado 🔥
----
+## 🔥 Tecnologías con las que he trabajado 🔥
 
 | Categoría      | Tecnologías                                                      |
 |----------------|------------------------------------------------------------------|
