@@ -1,4 +1,4 @@
-# 👋 ¡Hola, soy Saulo! 👋
+# 👋 Hola, soy Saulo 👋
 
 Me licencié en Ingeniería en Informática en la Universidad de Las Palmas de Gran Canaria y llevo ejerciendo de desarrollador web (a veces también de aplicaciones móviles) desde hace más de diez años.
 
