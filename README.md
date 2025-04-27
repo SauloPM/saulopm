@@ -16,16 +16,27 @@ Si quieres saber más sobre mí, te invito a visitar mi [perfil de LinkedIn](htt
  
 | Categoría      | Tecnologías                                                      |
 |----------------|------------------------------------------------------------------|
-| Frontend       | HTML, CSS, SASS, JavaScript, jQuery, Angular                     |
+| Frontend       | HTML, CSS, SASS, JavaScript, jQuery, Bootstrap, Angular          |
 | Backend        | Express (JavaScript), .NET Framework (C#), Python, Laravel (PHP) |
 | Bases de datos | MySQL, Oracle, PostgreSQL                                        |
 | Apps           | Ionic, Flutter                                                   |
 | CMS            | WordPress                                                        |
-| Otros          | Git, Firebase, Docker                                            |
+| Otros          | Git, SEO, Docker, Firebase                                       |
 
  <br>
 
 > **Nota** » También he trabajado con **Java**, pero no es una tecnología en la que esté interesado.
+
+## 🏆 Algunas de mis páginas web publicadas 🏆
+
+<br>
+       
+| Página web                                                      | Descripción                                      |
+|-----------------------------------------------------------------|--------------------------------------------------|
+| [Aprocodi](https://www.aprocodi.com/)                           | Asesoría online para creadores de contenido      |
+| [Aprosán](https://www.aprosan.es/)                              | Asesoría online para personal sanitario          |
+| [Estudio Jurídico San Gregorio](https://estudiojuridicosg.com/) | Despacho de abogados ubicado en Telde            |
+| [Sendero Noble](https://senderonoble.com/)                      | Organización de retiros espirituales en Canarias |
 
 <!--
 **SauloPM/saulopm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
