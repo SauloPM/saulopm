@@ -1,5 +1,12 @@
 ## Hi there 👋
 
+### 🛠 Tecnologías con las que he trabajado 🛠
+
+A lo largo de mi trayectoria he tenido la oportunidad de trabajar con diversas tecnologías, entre ellas:
+
+- **Frontend:** HTML, CSS, SASS, JavaScript, jQuery, Angular
+- **Backend:** Express, .NET Framework
+
 <!--
 **SauloPM/saulopm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
