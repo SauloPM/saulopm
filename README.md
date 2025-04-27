@@ -1,5 +1,7 @@
 # 👋 ¡Hola, soy Saulo! 👋
 
+<br>
+
 Me licencié en Ingeniería en Informática en la Universidad de Las Palmas de Gran Canaria y llevo ejerciendo de desarrollador web (a veces también de aplicaciones móviles) desde hace más de diez años.
 
 A la hora de empezar nuevos proyectos, disfruto mucho poniéndole esmero en:
@@ -9,6 +11,8 @@ A la hora de empezar nuevos proyectos, disfruto mucho poniéndole esmero en:
 - ✨ la higiene del código y en las buenas prácticas de programación.
 
 Si quieres saber más sobre mí, te invito a visitar mi [perfil de LinkedIn](https://es.linkedin.com/in/saulopm). 🚀
+
+<br>
 
 ## 🔥 Tecnologías con las que he trabajado 🔥
  
