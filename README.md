@@ -19,6 +19,15 @@ Si quieres saber más sobre mí, te invito a visitar mi [perfil de LinkedIn](htt
 - **CMS** » WordPress
 - **Otros** » Git, Firebase, Docker
 
+| Categoría      | Tecnologías                              |
+|----------------|-------------------------------------------|
+| Frontend       | HTML, CSS, SASS, JavaScript, jQuery, Angular |
+| Backend        | Express, .NET Framework (C#), Python, Laravel (PHP) |
+| Bases de datos | MySQL, Oracle, PostgreSQL                |
+| Apps           | Ionic, Flutter                           |
+| CMS            | WordPress                                |
+| Otros          | Git, Firebase, Docker                    |
+
 <!--
 **SauloPM/saulopm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
