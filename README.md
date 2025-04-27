@@ -1,11 +1,14 @@
-## Hi there 👋
+## 👋 Bienvenid@ 👋
 
-### 🛠 Tecnologías con las que he trabajado 🛠
+## 🔥 Tecnologías con las que he trabajado 🔥
 
-A lo largo de mi trayectoria he tenido la oportunidad de trabajar con diversas tecnologías, entre ellas:
+A lo largo de mi trayectoria profesional he tenido la oportunidad de trabajar con diversas tecnologías, entre ellas:
 
-- **Frontend:** HTML, CSS, SASS, JavaScript, jQuery, Angular
-- **Backend:** Express, .NET Framework
+- **Frontend:** » HTML, CSS, SASS, JavaScript, jQuery, Angular
+- **Backend** » Express, .NET Framework (C#), Python, Laravel (PHP)
+- **Bases de datos:** » MySQL, Oracle, PostgreSQL
+- **CMS** » WordPress
+- **Otros** » Git, Firebase, Docker
 
 <!--
 **SauloPM/saulopm** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
